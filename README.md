@@ -6,4 +6,6 @@ To prove that using TCCs is a correct approach, we reanalyzed two recently publi
 1. The 271 primary human myoblasts by [Trapnell et al.](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4122333/)
 2. The 3005 mouse brain cells by [Zeisel et al.](http://linnarssonlab.org/cortex/)
 
-See the corresponding folders for analysis code.
+See the corresponding folders for analysis code. The pipeline is as follows:
+
+![alt tag](https://github.com/govinda-kamath/clustering_on_reads/pipeline.jpg)
