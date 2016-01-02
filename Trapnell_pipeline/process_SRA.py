@@ -36,16 +36,8 @@ if (not SRA_dir) or (not out_dir):
     print ('usage is : \n python process_SRA.py -i input_SRA_dir -o output_fastq_dir [-n number-of-processes-to-use]')
     sys.exit(1)
 
-#print (SRA_dir)
-#print (out_dir)
+
 print("using "+str(num_proc)+" processes.")
-#SRA_dir= '/data/SS_RNA_seq/Trapnell/aspera_DL/'
-#out_dir='/data/SS_RNA_seq/Trapnell/read_data_test/'
-
-
-# In[ ]:
-
-
 
 
 # In[16]:
