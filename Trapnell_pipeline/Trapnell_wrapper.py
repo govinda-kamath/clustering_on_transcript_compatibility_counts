@@ -31,24 +31,24 @@ if (not SRA_dir) or (not kallipso_path) or (not ref_transcriptome):
     sys.exit(1)
 
 print('Extracting reads from SRAs...')
-#os.system('mkdir -p ./reads/')
-#os.system('rm -f ./reads/*')
-#os.system('python process_SRA.py -i '+SRA_dir+' -o ./reads/ -n '+str(num_proc))
+os.system('mkdir -p ./reads/')
+os.system('rm -f ./reads/*')
+os.system('python process_SRA.py -i '+SRA_dir+' -o ./reads/ -n '+str(num_proc))
 
 print('Generating the Kallisto index (with hacked kallisto)...')
-#os.system('mkdir -p ./kallisto_index')
-#os.system('rm -f ./kallisto_index/*')
+os.system('mkdir -p ./kallisto_index')
+os.system('rm -f ./kallisto_index/*')
 index_path='./kallisto_index/Trapnell_index.idx'
-#os.system(kallipso_path+' index -i '+index_path+' '+ref_transcriptome)
-#metadata_cmd=kallipso_path+' metadata '+index_path
-#os.system(metadata_cmd)
+os.system(kallipso_path+' index -i '+index_path+' '+ref_transcriptome)
+metadata_cmd=kallipso_path+' metadata '+index_path
+os.system(metadata_cmd)
 num_ec = sum(1 for line in open('./kallisto_index/Trapnell_index.idx_ecmap.txt'))
-#print(num_ec)
+print(num_ec)
 
 print('Generating TCC (with hacked kallisto)...')
-#os.system('mkdir -p ./transcript_compatibility_counts/')
-#os.system('rm -f ./transcript_compatibility_counts/*')
-#os.system('python get_pseudoalignments_paired_end.py -i ./reads/ -o ./transcript_compatibility_counts/ -k '+kallipso_path+ ' -t '+ index_path +' -n '+ str(num_proc))
+os.system('mkdir -p ./transcript_compatibility_counts/')
+os.system('rm -f ./transcript_compatibility_counts/*')
+os.system('python get_pseudoalignments_paired_end.py -i ./reads/ -o ./transcript_compatibility_counts/ -k '+kallipso_path+ ' -t '+ index_path +' -n '+ str(num_proc))
 
 print('Generating TCC distribution...')
 
