@@ -8,4 +8,4 @@ To prove that using TCCs is a correct approach, we reanalyzed two recently publi
 
 See the corresponding folders for analysis code. The pipeline is as follows:
 
-![alt tag](https://github.com/govinda-kamath/clustering_on_reads/pipeline.jpg)
+![pipeline](https://github.com/govinda-kamath/clustering_on_reads/blob/master/pipeline.png)
