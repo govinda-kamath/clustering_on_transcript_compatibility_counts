@@ -15,7 +15,7 @@ try:
     opts, args = getopt.getopt(sys.argv[1:],"i:o:n:",["idir=","odir=","njobs="])
 except getopt.GetoptError:
     print ("getopterrror")
-    print ('usage is : \n python process_SRA.py -i input_SRA_dir -o output_fastq_dir')
+    print ('usage is : \n python process_SRA.py -i input_SRA_dir -o output_fastq_dir [-n number-of-processes-to-use]')
     sys.exit(1)
 
 
@@ -33,7 +33,7 @@ for opt,arg in opts:
         num_proc=int(arg)
 
 if (not SRA_dir) or (not out_dir):
-    print ('usage is : \n python process_SRA.py -i input_SRA_dir -o output_fastq_dir')
+    print ('usage is : \n python process_SRA.py -i input_SRA_dir -o output_fastq_dir [-n number-of-processes-to-use]')
     sys.exit(1)
 
 #print (SRA_dir)
