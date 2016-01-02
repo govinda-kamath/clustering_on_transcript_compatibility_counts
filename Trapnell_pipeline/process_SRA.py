@@ -65,7 +65,7 @@ def process_SRA(fltuple):
 
 flnames=sorted(os.listdir(SRA_dir))
 
-fltuple=itertools.product(flnames[:10], [out_dir],[SRA_dir])
+fltuple=itertools.product(flnames, [out_dir],[SRA_dir])
 os.system('mkdir -p '+out_dir)
 
 
