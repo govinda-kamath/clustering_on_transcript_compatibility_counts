@@ -1,7 +1,7 @@
 import os
 import getopt
 import sys
-
+import numpy as np
 
 try:
     opts, args = getopt.getopt(sys.argv[1:],"i:n:k:t:",["idir=","njobs=","hacked-kallisto-path=","reference-transcriptome="])
@@ -35,6 +35,13 @@ os.system('mkdir -p ./reads/')
 os.system('rm -f ./reads/*')
 os.system('python process_SRA.py -i '+SRA_dir+' -o ./reads/ -n '+str(num_proc))
 
+print('Removing files that Trapnell throws...')
+relevant_fls=np.loadtxt('Files_to_keep.txt',dtype=str)
+fls_to_remove=[cells for cells in os.listdir('./reads/') if cells.split('_')[0] not in relevant_fls ]
+for fl in fls_to_remove:
+    os.system('rm '+'./reads/'+fl)
+
+
 print('Generating the Kallisto index (with hacked kallisto)...')
 os.system('mkdir -p ./kallisto_index')
 os.system('rm -f ./kallisto_index/*')
@@ -52,8 +59,8 @@ os.system('python get_pseudoalignments_paired_end.py -i ./reads/ -o ./transcript
 
 print('Generating TCC distribution...')
 
-os.system('python get_tcc_dist.py -i ./transcript_compatibility_counts/ -m '+str(num_ec)+' -t ./Trapnell_TCC.dat -d ./Trapnell_TCC_dist.dat')
+os.system('python get_tcc_dist.py -i ./transcript_compatibility_counts/ -m '+str(num_ec)+' -t ./Trapnell_TCC.dat -d ./Trapnell_TCC_distribution.dat')
 
 print('Generating pairwise distances...')
 
-os.system('python get_pairwise_distances.py ./Trapnell_TCC_dist.dat ./Trapnell_pairwise_dist.dat '+str(num_proc))
+os.system('python get_pairwise_distances.py ./Trapnell_TCC_dist.dat ./Trapnell_TCC_pairwise_distance.dat '+str(num_proc))
