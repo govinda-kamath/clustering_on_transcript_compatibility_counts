@@ -37,6 +37,7 @@ for opt,arg in opts:
         out_dir=arg
 
 # In[23]:
+print ("Num processes = "+str(num_proc))
 
 if (not read_dir) or (not code_path) or (not ref_path) or (not out_dir):
     print ('usage is : \n python get_pseudoalignments.py -i input-read-dir -o output-tcc-dir -k path-to-hacked-kallisto '+
