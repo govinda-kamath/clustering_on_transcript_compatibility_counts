@@ -6,7 +6,7 @@ import sys
 import multiprocessing as mp
 import itertools
 
-print len(sys.argv)
+print(len(sys.argv))
 if len(sys.argv)!=4:
     print ('usage is \n python get_pairwise_distances.py ip-file op-file num-processes')
     exit(1)
@@ -43,18 +43,18 @@ with open(sys.argv[1], 'rb') as infile:
         X = pickle.load(infile)
         print (np.shape(X))
 
-Y=X[:350,:]
+#Y=X
 
-num_rows=np.shape(Y)[0]
-for ind in range(num_rows):
-    print(Y[ind].sum(), ind)
+#num_rows=np.shape(Y)[0]
+#for ind in range(num_rows):
+#    print(X[ind].sum(), ind)
 
-D = pairwise_distances(Y,metric=jensen_shannon,n_jobs=45)
+D = pairwise_distances(X,metric=jensen_shannon,n_jobs=num_jobs)
 #D=np.zeros((num_rows,num_rows))
 
 #for i in range(num_rows):
 #    print(i)
-#    pool=mp.Pool(processes=num_jobs)
+#    pool=mp.Pool(processes=40)
 #    pqtuple=itertools.product([X[i,:]], X)
 #    D[i,:]=pool.map(jensen_shannon,pqtuple)
 
