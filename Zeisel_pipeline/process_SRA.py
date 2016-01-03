@@ -7,6 +7,7 @@ import os
 import subprocess
 import itertools
 import multiprocessing as mp
+import numpy as np
 import getopt
 import sys
 
@@ -44,7 +45,7 @@ print("using "+str(num_proc)+" processes.")
 
 
 # In[ ]:
-
+relevant_SRR=np.loadtxt('./SRR_in_3005.txt',dtype=str)
 
 
 
@@ -63,7 +64,9 @@ def process_SRA(fltuple):
 
 # In[15]:
 
-flnames=sorted(os.listdir(SRA_dir))
+
+
+flnames=sorted([x for x in os.listdir(SRA_dir) if x.split('.')[0] in relevant_SRR])
 
 fltuple=itertools.product(flnames, [out_dir],[SRA_dir])
 os.system('mkdir -p '+out_dir)
