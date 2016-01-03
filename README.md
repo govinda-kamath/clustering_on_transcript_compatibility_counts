@@ -1,5 +1,5 @@
 # Clustering on transcript compatibility counts
-Rather than clustering cells based on the abundances of genes, here we determine the transcript compatibility counts (TCCs) for each gene for each cell and cluster on the TCCs instead. We obtain transcript compatibility counts using [kallisto](https://github.com/pachterlab/kallisto).
+Rather than clustering cells based on the abundances of genes, here we determine the transcript compatibility counts (TCCs) for each cell and cluster on the TCCs instead. We obtain transcript compatibility counts using [kallisto](https://github.com/pachterlab/kallisto).
 
 To prove that using TCCs is a correct approach, we reanalyzed two recently published datasets:
 
