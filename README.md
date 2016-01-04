@@ -8,6 +8,6 @@ To show that using TCCs is a correct approach, we reanalyzed two recently publis
 
 See the corresponding folders for analysis code. We highly recommend looking at the documentation in the iPython notebooks Trapnell_Analysis.ipynb and Zeisel_Analysis.ipynb. Both notebooks go through how we use the code to generate the figures in our paper. 
 
-The figure below compares our TCC clustering pipeline to the conventional cell clustering pipeline. Please refer to our manuscript for more details:
+The figure below compares our TCC clustering pipeline to the conventional cell clustering pipeline. Please refer to our manuscript for more details.
 
 ![pipeline](https://github.com/govinda-kamath/clustering_on_reads/blob/master/pipeline.png)
