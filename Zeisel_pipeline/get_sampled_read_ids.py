@@ -45,7 +45,7 @@ def get_read_ids(fltuple):
     
 flnames=sorted([x for x in os.listdir(read_dir) if x.endswith('.fastq.gz')])
 fltuple=itertools.product(flnames,[read_dir])
-pool=mp.Pool(processes=64)
+pool=mp.Pool(processes=num_proc)
 pool.map(get_read_ids,fltuple)
 
 
