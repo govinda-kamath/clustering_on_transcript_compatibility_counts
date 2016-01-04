@@ -108,7 +108,7 @@ for index in range(6):
     pbam_dir= pbam_dir_base+sampling_suffix[index]+"/"
     quant_dir= quant_dir_base+sampling_suffix[index]+"/"
     read_dir_to_pass=read_dir_base+sampling_suffix[index]+"/"
-    os.system('python run_kallisto_and_get_pbam.py -i '+read_dir_to_pass+' -o '+quant_dir+' -p '+pbam_dir+' -t '+tmp_dir+' -r '+index_path +' -n '+str(num_proc))
+    #os.system('python run_kallisto_and_get_pbam.py -i '+read_dir_to_pass+' -o '+quant_dir+' -p '+pbam_dir+' -t '+tmp_dir+' -r '+index_path +' -n '+str(num_proc))
     
     
 print('Getting kallisto matrices...')
@@ -117,4 +117,10 @@ for index in range(6):
     print('Getting kallisto matrices for '+sampling_rates[index]+' fraction of reads...')
     quant_dir= quant_dir_base+sampling_suffix[index]+"/"
     kal_gene_dist_file=kal_gene_dist_file_base+sampling_suffix[index]+".dat"
-    os.system('python get_kallisto_matrices.py -i '+quant_dir+' -d '+kal_gene_dist_file)
+    #os.system('python get_kallisto_matrices.py -i '+quant_dir+' -d '+kal_gene_dist_file)
+    
+print('Getting read ids for subsampled reads...')
+for index in range(6):
+    print('Getting read ids for '+sampling_rates[index]+' fraction of reads...')
+    read_dir_to_pass=read_dir_base+sampling_suffix[index]+"/"
+    os.system('python get_sampled_read_ids.py -i '+read_dir_to_pass + ' -n '+str(num_proc))
