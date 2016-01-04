@@ -123,4 +123,11 @@ print('Getting read ids for subsampled reads...')
 for index in range(6):
     print('Getting read ids for '+sampling_rates[index]+' fraction of reads...')
     read_dir_to_pass=read_dir_base+sampling_suffix[index]+"/"
-    os.system('python get_sampled_read_ids.py -i '+read_dir_to_pass + ' -n '+str(num_proc))
+    #os.system('python get_sampled_read_ids.py -i '+read_dir_to_pass + ' -n '+str(num_proc))
+    
+print('Getting UMIs for sampled reads...')
+for index in range(1,6):
+    print('Getting UMIs for '+sampling_rates[index]+' fraction of reads...')
+    read_dir_to_pass=read_dir_base+sampling_suffix[index]+"/"
+    UMI_base_dir=read_dir_base+sampling_suffix[0]+"/"
+    os.system('python get_UMI_for_sampled_reads.py -i '+read_dir_to_pass +' -b '+ UMI_base_dir+' -n '+str(num_proc))
