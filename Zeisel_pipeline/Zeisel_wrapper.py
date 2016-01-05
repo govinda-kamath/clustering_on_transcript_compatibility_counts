@@ -112,12 +112,20 @@ for index in range(6):
     
     
 print('Getting kallisto matrices...')
-kal_gene_dist_file_base='./Zeisel_kallisto_TPM_distribution_subsample'
+kal_gene_dist_file_base='./Zeisel_kallisto_gene_distribution_subsample'
 for index in range(6):
     print('Getting kallisto matrices for '+sampling_rates[index]+' fraction of reads...')
     quant_dir= quant_dir_base+sampling_suffix[index]+"/"
     kal_gene_dist_file=kal_gene_dist_file_base+sampling_suffix[index]+".dat"
-    #os.system('python get_kallisto_matrices.py -i '+quant_dir+' -d '+kal_gene_dist_file)
+    os.system('python get_kallisto_matrices.py -i '+quant_dir+' -d '+kal_gene_dist_file)
+
+print('Generating pairwise distances...')
+kal_gene_distance_file_base='./Zeisel_kallisto_gene_pairwise_SJ_subsample'
+for index in range(6):
+    print('Getting kallisto pairwise distances for '+sampling_rates[index]+' fraction of reads...')
+    kal_gene_dist_file=kal_gene_dist_file_base+sampling_suffix[index]+".dat"
+    kal_gene_distance_file=kal_gene_distance_file_base+sampling_suffix[index]+".dat"
+    os.system('python get_pairwise_distances.py '+kal_gene_dist_file+' '+kal_gene_distance_file+' '+str(num_proc))
     
 print('Getting read ids for subsampled reads...')
 for index in range(6):
@@ -130,4 +138,29 @@ for index in range(1,6):
     print('Getting UMIs for '+sampling_rates[index]+' fraction of reads...')
     read_dir_to_pass=read_dir_base+sampling_suffix[index]+"/"
     UMI_base_dir=read_dir_base+sampling_suffix[0]+"/"
-    os.system('python get_UMI_for_sampled_reads.py -i '+read_dir_to_pass +' -b '+ UMI_base_dir+' -n '+str(num_proc))
+    #os.system('python get_UMI_for_sampled_reads.py -i '+read_dir_to_pass +' -b '+ UMI_base_dir+' -n '+str(num_proc))
+    
+TCC_UMI_tmp_base_dir='./Zeisel_TCC_UMI_tmp_subsample'
+UMI_base_dir=read_dir_base+sampling_suffix[0]+"/"
+for index in range(6):
+    print('Getting UMIs for '+sampling_rates[index]+' fraction of reads...')
+    TCC_UMI_tmp_dir=TCC_UMI_tmp_base_dir+sampling_suffix[index]+"/"
+    pbam_dir= pbam_dir_base+sampling_suffix[index]+"/"
+    #os.system('python process_pbam.py -i '+pbam_dir+' -o '+TCC_UMI_tmp_dir+' -u '+UMI_base_dir+' -n '+str(num_proc))
+    
+TCC_UMI_file_base='./Zeisel_TCC_UMI_subsample'
+TCC_UMI_distribution_file_base='./Zeisel_TCC_UMI_distribution_subsample'
+for index in range(6):
+    print('Getting TCC UMI matrix for '+sampling_rates[index]+' fraction of reads...')
+    TCC_UMI_tmp_dir=TCC_UMI_tmp_base_dir+sampling_suffix[index]+"/"
+    TCC_UMI_file=TCC_UMI_file_base+sampling_suffix[index]+'.dat'
+    TCC_UMI_distribution_file=TCC_UMI_distribution_file_base+sampling_suffix[index]+'.dat'
+    os.system('python get_UMI_matrices.py -i '+TCC_UMI_tmp_dir+' -t '+TCC_UMI_file+' -d '+TCC_UMI_distribution_file)
+    
+print('Generating pairwise distances...')
+TCC_UMI_distance_file_base='./Zeisel_TCC_UMI_pairwise_JS_subsample'
+for index in range(6):
+    print('Getting pairwise distance of the TCC UMI matrix for '+sampling_rates[index]+' fraction of reads...')
+    TCC_UMI_distance_file=TCC_UMI_distance_file_base+sampling_suffix[index]+'.dat'
+    TCC_UMI_distribution_file=TCC_UMI_distribution_file_base+sampling_suffix[index]+'.dat'
+    os.system('python get_pairwise_distances.py '+TCC_UMI_distribution_file+' '+TCC_UMI_distance_file+' '+str(num_proc))
