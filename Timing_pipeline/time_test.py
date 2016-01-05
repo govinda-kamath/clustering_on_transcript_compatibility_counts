@@ -122,10 +122,10 @@ def run_kallipso():
         command = kallipso_path+' pseudoalign -i '+ ref_path+ ' -o ' + test_kallipso_dir+cellname+'.counts' + ' ' + read_path
         #print command
         os.system(command)
-x=timeit.timeit(run_kallipso,number=1)
-op_file=test_kallipso_dir+'time.time'
-with open(op_file,'w') as f:
-    f.write(str(x))
+#x=timeit.timeit(run_kallipso,number=1)
+#op_file=test_kallipso_dir+'time.time'
+#with open(op_file,'w') as f:
+#    f.write(str(x))
     
 print('Timing word count...')
 def run_word_count():
@@ -134,7 +134,32 @@ def run_word_count():
     for flname in flnames:
         read_path=test_read_dir+flname
         os.system('wc '+read_path)
-x=timeit.timeit(run_word_count,number=1)
-op_file=test_wc_dir+'time.time'
+#x=timeit.timeit(run_word_count,number=1)
+#op_file=test_wc_dir+'time.time'
+#with open(op_file,'w') as f:
+#    f.write(str(x))        
+
+print('Timing hisat...')
+def run_hisat():
+    test_hisat_dir='./hisat/'
+    test_read_dir='./reads/'
+    transcriptome_path='./hisat_index/Zeisel_index'
+    
+    
+    flnames=sorted(os.listdir(test_read_dir))
+    for fls in flnames:
+        cellname=fls.split('.')[0]
+        out_sam=test_hisat_dir+cellname+'.sam'
+        out_bam=test_hisat_dir+cellname+'.bam'
+        read_fl=test_read_dir+fls
+        cmd="""hisat -x"""+transcriptome_path+ """  -U """ +test_read_dir+fls+" -S "+out_sam
+        #print cmd
+        cmd1="samtools view -bS "+out_sam+" > "+out_bam
+        #print cmd1
+        os.system(cmd)
+        os.system(cmd1)
+        
+x=timeit.timeit(run_hisat,number=1)
+op_file=test_hisat_dir+'time.time'
 with open(op_file,'w') as f:
-    f.write(str(x))        
+    f.write(str(x))   
