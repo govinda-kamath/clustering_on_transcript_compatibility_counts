@@ -1,3 +1,4 @@
+# A modified version of https://github.com/petermuehlbacher/diffusion-maps-algorithm/blob/master/diffusion%20maps.py
 # A python implementation of the diffusion maps algorithm introduced by [Lafon](https://sites.google.com/site/stefansresearchpapers/home/dissertation.pdf).
 
 import numpy as np
