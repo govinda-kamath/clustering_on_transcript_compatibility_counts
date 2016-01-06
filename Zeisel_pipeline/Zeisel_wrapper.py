@@ -205,6 +205,17 @@ for index in range(6):
     UMI_distribution_file=UMI_distribution_file_base+sampling_suffix[index]+'.dat'
     #os.system('python get_pairwise_distances.py '+UMI_distribution_file+' '+UMI_distance_file+' '+str(num_proc))
     
-print('Running eXpress')
-os.system('python run_express.py -r '+ref_transcriptome+' -n '+str(num_proc))
+print('Running eXpress....')
+#os.system('python run_express.py -r '+ref_transcriptome+' -n '+str(num_proc))
+
+print('Processing eXpress cells....')
+os.system('python process_xprs.py -n '+str(num_proc))
+os.system('python t3i_to_expression_matrix.py')
     
+print('Getting pairwise distances for eXpress...')
+eXpress_distribution_base='./Zeisel_express_distribution_subsample'
+eXpress_distance_base='./Zeisel_express_distance_subsample'
+for index in range(6):
+    eXpress_distance_file=eXpress_distance_base+sampling_suffix[index]+'.dat'
+    eXpress_distribution_file=eXpress_distribution_base+sampling_suffix[index]+'.dat'
+    os.system('python get_pairwise_distances.py '+eXpress_distribution_file+' '+eXpress_distance_file+' '+str(num_proc))
