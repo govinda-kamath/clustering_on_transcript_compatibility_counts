@@ -6,7 +6,7 @@ To show that using TCCs is a correct approach, we reanalyzed two recently publis
 1. The 271 primary human myoblasts by [Trapnell et al.](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4122333/)
 2. The 3005 mouse brain cells by [Zeisel et al.](http://linnarssonlab.org/cortex/)
 
-We obtained the raw read files from NCBI's [Gene Expression Omnibus](http://www.ncbi.nlm.nih.gov/geo/). See the corresponding folders for analysis code. The Trapnell_pipeline and Zeisel_pipeline folders also containe a script for automatically downloading the SRR files corresponding to datasets. We highly recommend looking at the documentation in the iPython notebooks Trapnell_Analysis.ipynb, Zeisel_Analysis.ipynb, and Timing_Analysis.ipynb. All notebooks go through how we use the code to generate the figures in our paper.
+We obtained the raw read files from NCBI's [Gene Expression Omnibus](http://www.ncbi.nlm.nih.gov/geo/). See the corresponding folders for analysis code. The Trapnell_pipeline and Zeisel_pipeline folders contain scripts for automatically downloading the SRR files corresponding to datasets. We highly recommend looking at the documentation in the iPython notebooks Trapnell_Analysis.ipynb, Zeisel_Analysis.ipynb, and Timing_Analysis.ipynb. All notebooks go through how we use the code to generate the figures in our paper.
 
 ## Preliminaries
 
