@@ -196,12 +196,15 @@ for index in range(6):
     UMI_file=UMI_file_base+sampling_suffix[index]+'.dat'
     UMI_distribution_file=UMI_distribution_file_base+sampling_suffix[index]+'.dat'
     UMI_dir=UMI_dir_base+sampling_suffix[index]+'/'
-    os.system('python get_UMI_count_matrices.py -i '+ UMI_dir +' -t '+UMI_file+' -d '+UMI_distribution_file)
+    #os.system('python get_UMI_count_matrices.py -i '+ UMI_dir +' -t '+UMI_file+' -d '+UMI_distribution_file)
     
 print('Getting pairwise distances between UMI matrices...')
 UMI_distance_base='./Zeisel_UMI_pairwise_SJ_subsample'
 for index in range(6):
     UMI_distance_file=UMI_distance_base+sampling_suffix[index]+'.dat'
     UMI_distribution_file=UMI_distribution_file_base+sampling_suffix[index]+'.dat'
-    os.system('python get_pairwise_distances.py '+UMI_distribution_file+' '+UMI_distance_file+' '+str(num_proc))
+    #os.system('python get_pairwise_distances.py '+UMI_distribution_file+' '+UMI_distance_file+' '+str(num_proc))
+    
+print('Running eXpress')
+os.system('python run_express.py -r '+ref_transcriptome+' -n '+str(num_proc))
     
