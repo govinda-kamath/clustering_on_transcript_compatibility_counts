@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="src">
+        <in>Bootstrap.cpp</in>
+        <in>H5Writer.cpp</in>
+        <in>Kmer.cpp</in>
+        <in>KmerIndex.cpp</in>
+        <in>KmerIterator.cpp</in>
+        <in>MinCollector.cpp</in>
+        <in>PlaintextWriter.cpp</in>
+        <in>ProcessReads.cpp</in>
+        <in>common.cpp</in>
+        <in>h5utils.cpp</in>
+        <in>hash.cpp</in>
+        <in>main.cpp</in>
+        <in>weights.cpp</in>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>CMakeLists.txt</itemPath>
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-std=c++11"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>src/kallisto</executablePath>
+          <ccTool>
+            <incDir>
+              <pElem>ext</pElem>
+            </incDir>
+          </ccTool>
+        </makeTool>
+      </makefileType>
+      <item path="src/Bootstrap.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>/usr/local/Cellar/hdf5/1.8.15/include</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/H5Writer.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>/usr/local/Cellar/hdf5/1.8.15/include</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/Kmer.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>/usr/local/Cellar/hdf5/1.8.15/include</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/KmerIndex.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>/usr/local/Cellar/hdf5/1.8.15/include</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/KmerIterator.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>/usr/local/Cellar/hdf5/1.8.15/include</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/MinCollector.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>/usr/local/Cellar/hdf5/1.8.15/include</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/PlaintextWriter.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>/usr/local/Cellar/hdf5/1.8.15/include</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/ProcessReads.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>/usr/local/Cellar/hdf5/1.8.15/include</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/common.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>/usr/local/Cellar/hdf5/1.8.15/include</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/h5utils.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>/usr/local/Cellar/hdf5/1.8.15/include</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/hash.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>/usr/local/Cellar/hdf5/1.8.15/include</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>/usr/local/Cellar/hdf5/1.8.15/include</pElem>
+            <pElem>src</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/weights.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>/usr/local/Cellar/hdf5/1.8.15/include</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
