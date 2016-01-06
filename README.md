@@ -39,13 +39,17 @@ To run the code related to analysis on data of Trapnell et al., please follow th
 
 To run the code related to analysis on data of Zeisel et al., please follow the following instructions:
 
-* Build the modified version of kallisto for single ended reads. This is in [modified-kallisto-single](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/tree/master/modified-kallisto-source/kallisto_pseudo_single). This is also used for the timing analysis.
-* Download the mouse transcriptome (for example from [here](http://bio.math.berkeley.edu/kallisto/transcriptomes/Mus_musculus.GRCm38.rel79.cdna.all.fa.gz)).
-* Download the data set of Trapnell et al. from [here](http://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP045/SRP045452/) to get all the .sra files in a single directory. We've provided a sample script that can do this in [get_files.py](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/blob/master/Zeisel_pipeline/get_files.py). 
+* Build the modified version of kallisto for single ended reads. This is in [modified-kallisto-single](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/tree/master/modified-kallisto-source/kallisto_pseudo_single). This is also used in the timing analysis.
+* Download the mouse transcriptome (for example from [here](http://bio.math.berkeley.edu/kallisto/transcriptomes/Mus_musculus.GRCm38.rel79.cdna.all.fa.gz)). This is also used in the timing analysis.
+* Download the data set of Zeisel et al. from [here](http://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP045/SRP045452/) to get all the .sra files in a single directory. We've provided a sample script that can do this in [get_files.py](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/blob/master/Zeisel_pipeline/get_files.py). 
 * Pass the directory of the SRA files, the path to the mouse trancriptome, and path to the modified version of kallisto for single end reads to [Zeisel_Analysis.ipynb](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/blob/master/Zeisel_pipeline/Zeisel_Analysis.ipynb), to verify all results on the dataset of Zeisel et al.
 
+To run the timing analysis, please follow the following instructions:
 
-* Download the Mouse genome (for example from [here](http://ftp.ncbi.nih.gov/genomes/M_musculus/Assembled_chromosomes/seq/)) and gunzip all the fa.gz files. This is necessary only for running the timing analysis.
+* Build the modified version of kallisto for single ended reads. This is in [modified-kallisto-single](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/tree/master/modified-kallisto-source/kallisto_pseudo_single). This is also used in the analysis of dataset of Zeisel et al.
+* Download the mouse transcriptome (for example from [here](http://bio.math.berkeley.edu/kallisto/transcriptomes/Mus_musculus.GRCm38.rel79.cdna.all.fa.gz)). This is also used in the analysis of dataset of Zeisel et al.
+* Download the Mouse genome (for example from [here](http://ftp.ncbi.nih.gov/genomes/M_musculus/Assembled_chromosomes/seq/)) and gunzip all the fa.gz files. 
+* Pass the path to the mouse trancriptome, the path to the mouse genome, and path to the modified version of kallisto for single end reads to [Timing_Analysis.ipynb](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/blob/master/Timing_pipeline/Timing_Analysis.ipynb), to verify all timing results. Set the -p option in the call to [time_test.py](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/blob/master/Timing_pipeline/time_test.py) there, to run timing analysis on the same 10 cells used in the paper. Otherwise it is run on 10 cells randomly selected from the dataset of Zeisel et al.
 
 The figure below compares our TCC clustering pipeline to the conventional cell clustering pipeline. Please refer to our manuscript for more details.
 
