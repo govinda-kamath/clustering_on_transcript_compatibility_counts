@@ -30,6 +30,8 @@ To run the scripts in the iPython notebooks, the following Python modules are re
 * [pysam](https://github.com/pysam-developers/pysam)
 * [networkx](https://networkx.github.io/documentation/latest/install.html)
 
+## Instructions
+
 To run the code related to analysis on data of Trapnell et al., please follow the following instructions:
 
 * Build the modified version of kallisto for paired end reads. This is in [modified-kallisto-paired](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/tree/master/modified-kallisto-source/kallisto_pseudo_paired). 
