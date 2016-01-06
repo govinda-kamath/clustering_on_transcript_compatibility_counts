@@ -1,4 +1,4 @@
-# Install script for directory: /data/SS_RNA_seq/Code/kallisto_pseudo_paired
+# Install script for directory: /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/data/SS_RNA_seq/Code/kallisto_pseudo_paired/build/src/cmake_install.cmake")
+  include("/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build/src/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/data/SS_RNA_seq/Code/kallisto_pseudo_paired/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

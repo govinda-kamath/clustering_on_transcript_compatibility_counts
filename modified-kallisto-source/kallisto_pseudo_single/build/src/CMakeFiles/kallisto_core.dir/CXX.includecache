@@ -6,37 +6,37 @@
 
 #IncludeRegexTransform: 
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/Bootstrap.cpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/Bootstrap.cpp
 Bootstrap.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/Bootstrap.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/Bootstrap.h
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/Bootstrap.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/Bootstrap.h
 mutex
 -
 thread
 -
 KmerIndex.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/KmerIndex.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/KmerIndex.h
 MinCollector.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/MinCollector.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/MinCollector.h
 weights.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/weights.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/weights.h
 EMAlgorithm.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/EMAlgorithm.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/EMAlgorithm.h
 Multinomial.hpp
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/Multinomial.hpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/Multinomial.hpp
 H5Writer.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/H5Writer.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/H5Writer.h
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/EMAlgorithm.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/EMAlgorithm.h
 common.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/common.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/common.h
 KmerIndex.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/KmerIndex.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/KmerIndex.h
 MinCollector.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/MinCollector.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/MinCollector.h
 weights.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/weights.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/weights.h
 algorithm
 -
 numeric
@@ -48,27 +48,27 @@ limits
 vector
 -
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/H5Writer.cpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/H5Writer.cpp
 H5Writer.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/H5Writer.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/H5Writer.h
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/H5Writer.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/H5Writer.h
 EMAlgorithm.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/EMAlgorithm.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/EMAlgorithm.h
 h5utils.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/h5utils.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/h5utils.h
 PlaintextWriter.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/PlaintextWriter.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/PlaintextWriter.h
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/Inspect.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/Inspect.h
 iostream
 -
 KmerIndex.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/KmerIndex.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/KmerIndex.h
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/Kmer.cpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/Kmer.cpp
 Kmer.hpp
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/Kmer.hpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/Kmer.hpp
 bitset
 -
 string
@@ -76,7 +76,7 @@ string
 iostream
 -
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/Kmer.hpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/Kmer.hpp
 stdio.h
 -
 stdint.h
@@ -88,9 +88,9 @@ cstring
 string
 -
 hash.hpp
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/hash.hpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/hash.hpp
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/KmerHashTable.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/KmerHashTable.h
 utility
 -
 string
@@ -98,9 +98,9 @@ string
 iterator
 -
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/KmerIndex.cpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/KmerIndex.cpp
 KmerIndex.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/KmerIndex.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/KmerIndex.h
 algorithm
 -
 random
@@ -112,9 +112,9 @@ zlib.h
 unordered_set
 -
 kseq.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/kseq.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/kseq.h
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/KmerIndex.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/KmerIndex.h
 iostream
 -
 fstream
@@ -128,41 +128,41 @@ stdint.h
 ostream
 -
 common.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/common.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/common.h
 Kmer.hpp
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/Kmer.hpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/Kmer.hpp
 KmerIterator.hpp
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/KmerIterator.hpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/KmerIterator.hpp
 KmerHashTable.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/KmerHashTable.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/KmerHashTable.h
 hash.hpp
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/hash.hpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/hash.hpp
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/KmerIterator.cpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/KmerIterator.cpp
 iterator
 -
 utility
 -
 Kmer.hpp
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/Kmer.hpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/Kmer.hpp
 KmerIterator.hpp
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/KmerIterator.hpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/KmerIterator.hpp
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/KmerIterator.hpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/KmerIterator.hpp
 iterator
 -
 Kmer.hpp
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/Kmer.hpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/Kmer.hpp
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/MinCollector.cpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/MinCollector.cpp
 MinCollector.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/MinCollector.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/MinCollector.h
 algorithm
 -
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/MinCollector.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/MinCollector.h
 common.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/common.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/common.h
 iostream
 -
 fstream
@@ -174,21 +174,21 @@ vector
 unordered_map
 -
 KmerIndex.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/KmerIndex.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/KmerIndex.h
 weights.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/weights.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/weights.h
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/Multinomial.hpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/Multinomial.hpp
 stdexcept
 -
 random
 -
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/PlaintextWriter.cpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/PlaintextWriter.cpp
 PlaintextWriter.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/PlaintextWriter.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/PlaintextWriter.h
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/PlaintextWriter.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/PlaintextWriter.h
 assert.h
 -
 cstdlib
@@ -202,11 +202,11 @@ string
 vector
 -
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/ProcessReads.cpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/ProcessReads.cpp
 zlib.h
 -
 kseq.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/kseq.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/kseq.h
 string
 -
 vector
@@ -220,19 +220,19 @@ iostream
 fstream
 -
 MinCollector.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/MinCollector.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/MinCollector.h
 common.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/common.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/common.h
 ProcessReads.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/ProcessReads.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/ProcessReads.h
 kseq.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/kseq.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/kseq.h
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/ProcessReads.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/ProcessReads.h
 zlib.h
 -
 kseq.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/kseq.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/kseq.h
 string
 -
 vector
@@ -246,25 +246,25 @@ iostream
 fstream
 -
 MinCollector.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/MinCollector.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/MinCollector.h
 common.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/common.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/common.h
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/common.cpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/common.cpp
 common.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/common.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/common.h
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/common.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/common.h
 string
 -
 vector
 -
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/h5utils.cpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/h5utils.cpp
 h5utils.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/h5utils.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/h5utils.h
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/h5utils.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/h5utils.h
 assert.h
 -
 cstring
@@ -278,21 +278,21 @@ vector
 iostream
 -
 hdf5.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/hdf5.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/hdf5.h
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/hash.cpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/hash.cpp
 stdint.h
 -
 cstring
 -
 hash.hpp
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/hash.hpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/hash.hpp
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/hash.hpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/hash.hpp
 stdint.h
 -
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/kseq.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/kseq.h
 ctype.h
 -
 string.h
@@ -300,7 +300,7 @@ string.h
 stdlib.h
 -
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/main.cpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/main.cpp
 string
 -
 iostream
@@ -324,37 +324,37 @@ cstdio
 zlib.h
 -
 common.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/common.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/common.h
 ProcessReads.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/ProcessReads.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/ProcessReads.h
 KmerIndex.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/KmerIndex.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/KmerIndex.h
 Kmer.hpp
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/Kmer.hpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/Kmer.hpp
 MinCollector.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/MinCollector.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/MinCollector.h
 EMAlgorithm.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/EMAlgorithm.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/EMAlgorithm.h
 weights.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/weights.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/weights.h
 Inspect.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/Inspect.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/Inspect.h
 Bootstrap.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/Bootstrap.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/Bootstrap.h
 H5Writer.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/H5Writer.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/H5Writer.h
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/weights.cpp
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/weights.cpp
 weights.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/weights.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/weights.h
 cmath
 -
 
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/weights.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/weights.h
 KmerIndex.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/KmerIndex.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/KmerIndex.h
 MinCollector.h
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/MinCollector.h
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/MinCollector.h
 cmath
 -
 unordered_map

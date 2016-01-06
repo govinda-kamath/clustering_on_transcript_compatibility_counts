@@ -42,23 +42,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/SS_RNA_seq/Code/kallisto_pseudo_v1
+CMAKE_SOURCE_DIR = /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build
+CMAKE_BINARY_DIR = /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -113,9 +103,9 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/CMakeFiles /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -155,6 +145,11 @@ kallisto/fast:
 	$(MAKE) -f src/CMakeFiles/kallisto.dir/build.make src/CMakeFiles/kallisto.dir/build
 .PHONY : kallisto/fast
 
+# Manual pre-install relink rule for target.
+kallisto/preinstall:
+	$(MAKE) -f src/CMakeFiles/kallisto.dir/build.make src/CMakeFiles/kallisto.dir/preinstall
+.PHONY : kallisto/preinstall
+
 #=============================================================================
 # Target rules for targets named kallisto_core
 
@@ -174,7 +169,6 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... install"

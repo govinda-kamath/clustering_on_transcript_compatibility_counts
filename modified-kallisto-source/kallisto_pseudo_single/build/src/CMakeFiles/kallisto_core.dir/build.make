@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/SS_RNA_seq/Code/kallisto_pseudo_v1
+CMAKE_SOURCE_DIR = /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build
+CMAKE_BINARY_DIR = /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/kallisto_core.dir/depend.make
@@ -51,17 +51,17 @@ include src/CMakeFiles/kallisto_core.dir/flags.make
 
 src/CMakeFiles/kallisto_core.dir/Bootstrap.cpp.o: src/CMakeFiles/kallisto_core.dir/flags.make
 src/CMakeFiles/kallisto_core.dir/Bootstrap.cpp.o: ../src/Bootstrap.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/kallisto_core.dir/Bootstrap.cpp.o"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/Bootstrap.cpp.o -c /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/Bootstrap.cpp
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/Bootstrap.cpp.o -c /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/Bootstrap.cpp
 
 src/CMakeFiles/kallisto_core.dir/Bootstrap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kallisto_core.dir/Bootstrap.cpp.i"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/Bootstrap.cpp > CMakeFiles/kallisto_core.dir/Bootstrap.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/Bootstrap.cpp > CMakeFiles/kallisto_core.dir/Bootstrap.cpp.i
 
 src/CMakeFiles/kallisto_core.dir/Bootstrap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kallisto_core.dir/Bootstrap.cpp.s"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/Bootstrap.cpp -o CMakeFiles/kallisto_core.dir/Bootstrap.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/Bootstrap.cpp -o CMakeFiles/kallisto_core.dir/Bootstrap.cpp.s
 
 src/CMakeFiles/kallisto_core.dir/Bootstrap.cpp.o.requires:
 .PHONY : src/CMakeFiles/kallisto_core.dir/Bootstrap.cpp.o.requires
@@ -74,17 +74,17 @@ src/CMakeFiles/kallisto_core.dir/Bootstrap.cpp.o.provides.build: src/CMakeFiles/
 
 src/CMakeFiles/kallisto_core.dir/common.cpp.o: src/CMakeFiles/kallisto_core.dir/flags.make
 src/CMakeFiles/kallisto_core.dir/common.cpp.o: ../src/common.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/kallisto_core.dir/common.cpp.o"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/common.cpp.o -c /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/common.cpp
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/common.cpp.o -c /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/common.cpp
 
 src/CMakeFiles/kallisto_core.dir/common.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kallisto_core.dir/common.cpp.i"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/common.cpp > CMakeFiles/kallisto_core.dir/common.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/common.cpp > CMakeFiles/kallisto_core.dir/common.cpp.i
 
 src/CMakeFiles/kallisto_core.dir/common.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kallisto_core.dir/common.cpp.s"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/common.cpp -o CMakeFiles/kallisto_core.dir/common.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/common.cpp -o CMakeFiles/kallisto_core.dir/common.cpp.s
 
 src/CMakeFiles/kallisto_core.dir/common.cpp.o.requires:
 .PHONY : src/CMakeFiles/kallisto_core.dir/common.cpp.o.requires
@@ -97,17 +97,17 @@ src/CMakeFiles/kallisto_core.dir/common.cpp.o.provides.build: src/CMakeFiles/kal
 
 src/CMakeFiles/kallisto_core.dir/h5utils.cpp.o: src/CMakeFiles/kallisto_core.dir/flags.make
 src/CMakeFiles/kallisto_core.dir/h5utils.cpp.o: ../src/h5utils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/kallisto_core.dir/h5utils.cpp.o"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/h5utils.cpp.o -c /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/h5utils.cpp
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/h5utils.cpp.o -c /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/h5utils.cpp
 
 src/CMakeFiles/kallisto_core.dir/h5utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kallisto_core.dir/h5utils.cpp.i"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/h5utils.cpp > CMakeFiles/kallisto_core.dir/h5utils.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/h5utils.cpp > CMakeFiles/kallisto_core.dir/h5utils.cpp.i
 
 src/CMakeFiles/kallisto_core.dir/h5utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kallisto_core.dir/h5utils.cpp.s"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/h5utils.cpp -o CMakeFiles/kallisto_core.dir/h5utils.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/h5utils.cpp -o CMakeFiles/kallisto_core.dir/h5utils.cpp.s
 
 src/CMakeFiles/kallisto_core.dir/h5utils.cpp.o.requires:
 .PHONY : src/CMakeFiles/kallisto_core.dir/h5utils.cpp.o.requires
@@ -120,17 +120,17 @@ src/CMakeFiles/kallisto_core.dir/h5utils.cpp.o.provides.build: src/CMakeFiles/ka
 
 src/CMakeFiles/kallisto_core.dir/H5Writer.cpp.o: src/CMakeFiles/kallisto_core.dir/flags.make
 src/CMakeFiles/kallisto_core.dir/H5Writer.cpp.o: ../src/H5Writer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/kallisto_core.dir/H5Writer.cpp.o"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/H5Writer.cpp.o -c /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/H5Writer.cpp
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/H5Writer.cpp.o -c /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/H5Writer.cpp
 
 src/CMakeFiles/kallisto_core.dir/H5Writer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kallisto_core.dir/H5Writer.cpp.i"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/H5Writer.cpp > CMakeFiles/kallisto_core.dir/H5Writer.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/H5Writer.cpp > CMakeFiles/kallisto_core.dir/H5Writer.cpp.i
 
 src/CMakeFiles/kallisto_core.dir/H5Writer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kallisto_core.dir/H5Writer.cpp.s"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/H5Writer.cpp -o CMakeFiles/kallisto_core.dir/H5Writer.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/H5Writer.cpp -o CMakeFiles/kallisto_core.dir/H5Writer.cpp.s
 
 src/CMakeFiles/kallisto_core.dir/H5Writer.cpp.o.requires:
 .PHONY : src/CMakeFiles/kallisto_core.dir/H5Writer.cpp.o.requires
@@ -143,17 +143,17 @@ src/CMakeFiles/kallisto_core.dir/H5Writer.cpp.o.provides.build: src/CMakeFiles/k
 
 src/CMakeFiles/kallisto_core.dir/hash.cpp.o: src/CMakeFiles/kallisto_core.dir/flags.make
 src/CMakeFiles/kallisto_core.dir/hash.cpp.o: ../src/hash.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/kallisto_core.dir/hash.cpp.o"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/hash.cpp.o -c /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/hash.cpp
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/hash.cpp.o -c /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/hash.cpp
 
 src/CMakeFiles/kallisto_core.dir/hash.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kallisto_core.dir/hash.cpp.i"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/hash.cpp > CMakeFiles/kallisto_core.dir/hash.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/hash.cpp > CMakeFiles/kallisto_core.dir/hash.cpp.i
 
 src/CMakeFiles/kallisto_core.dir/hash.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kallisto_core.dir/hash.cpp.s"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/hash.cpp -o CMakeFiles/kallisto_core.dir/hash.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/hash.cpp -o CMakeFiles/kallisto_core.dir/hash.cpp.s
 
 src/CMakeFiles/kallisto_core.dir/hash.cpp.o.requires:
 .PHONY : src/CMakeFiles/kallisto_core.dir/hash.cpp.o.requires
@@ -166,17 +166,17 @@ src/CMakeFiles/kallisto_core.dir/hash.cpp.o.provides.build: src/CMakeFiles/kalli
 
 src/CMakeFiles/kallisto_core.dir/Kmer.cpp.o: src/CMakeFiles/kallisto_core.dir/flags.make
 src/CMakeFiles/kallisto_core.dir/Kmer.cpp.o: ../src/Kmer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/kallisto_core.dir/Kmer.cpp.o"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/Kmer.cpp.o -c /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/Kmer.cpp
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/Kmer.cpp.o -c /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/Kmer.cpp
 
 src/CMakeFiles/kallisto_core.dir/Kmer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kallisto_core.dir/Kmer.cpp.i"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/Kmer.cpp > CMakeFiles/kallisto_core.dir/Kmer.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/Kmer.cpp > CMakeFiles/kallisto_core.dir/Kmer.cpp.i
 
 src/CMakeFiles/kallisto_core.dir/Kmer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kallisto_core.dir/Kmer.cpp.s"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/Kmer.cpp -o CMakeFiles/kallisto_core.dir/Kmer.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/Kmer.cpp -o CMakeFiles/kallisto_core.dir/Kmer.cpp.s
 
 src/CMakeFiles/kallisto_core.dir/Kmer.cpp.o.requires:
 .PHONY : src/CMakeFiles/kallisto_core.dir/Kmer.cpp.o.requires
@@ -189,17 +189,17 @@ src/CMakeFiles/kallisto_core.dir/Kmer.cpp.o.provides.build: src/CMakeFiles/kalli
 
 src/CMakeFiles/kallisto_core.dir/KmerIndex.cpp.o: src/CMakeFiles/kallisto_core.dir/flags.make
 src/CMakeFiles/kallisto_core.dir/KmerIndex.cpp.o: ../src/KmerIndex.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/kallisto_core.dir/KmerIndex.cpp.o"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/KmerIndex.cpp.o -c /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/KmerIndex.cpp
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/KmerIndex.cpp.o -c /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/KmerIndex.cpp
 
 src/CMakeFiles/kallisto_core.dir/KmerIndex.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kallisto_core.dir/KmerIndex.cpp.i"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/KmerIndex.cpp > CMakeFiles/kallisto_core.dir/KmerIndex.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/KmerIndex.cpp > CMakeFiles/kallisto_core.dir/KmerIndex.cpp.i
 
 src/CMakeFiles/kallisto_core.dir/KmerIndex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kallisto_core.dir/KmerIndex.cpp.s"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/KmerIndex.cpp -o CMakeFiles/kallisto_core.dir/KmerIndex.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/KmerIndex.cpp -o CMakeFiles/kallisto_core.dir/KmerIndex.cpp.s
 
 src/CMakeFiles/kallisto_core.dir/KmerIndex.cpp.o.requires:
 .PHONY : src/CMakeFiles/kallisto_core.dir/KmerIndex.cpp.o.requires
@@ -212,17 +212,17 @@ src/CMakeFiles/kallisto_core.dir/KmerIndex.cpp.o.provides.build: src/CMakeFiles/
 
 src/CMakeFiles/kallisto_core.dir/KmerIterator.cpp.o: src/CMakeFiles/kallisto_core.dir/flags.make
 src/CMakeFiles/kallisto_core.dir/KmerIterator.cpp.o: ../src/KmerIterator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/kallisto_core.dir/KmerIterator.cpp.o"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/KmerIterator.cpp.o -c /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/KmerIterator.cpp
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/KmerIterator.cpp.o -c /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/KmerIterator.cpp
 
 src/CMakeFiles/kallisto_core.dir/KmerIterator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kallisto_core.dir/KmerIterator.cpp.i"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/KmerIterator.cpp > CMakeFiles/kallisto_core.dir/KmerIterator.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/KmerIterator.cpp > CMakeFiles/kallisto_core.dir/KmerIterator.cpp.i
 
 src/CMakeFiles/kallisto_core.dir/KmerIterator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kallisto_core.dir/KmerIterator.cpp.s"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/KmerIterator.cpp -o CMakeFiles/kallisto_core.dir/KmerIterator.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/KmerIterator.cpp -o CMakeFiles/kallisto_core.dir/KmerIterator.cpp.s
 
 src/CMakeFiles/kallisto_core.dir/KmerIterator.cpp.o.requires:
 .PHONY : src/CMakeFiles/kallisto_core.dir/KmerIterator.cpp.o.requires
@@ -235,17 +235,17 @@ src/CMakeFiles/kallisto_core.dir/KmerIterator.cpp.o.provides.build: src/CMakeFil
 
 src/CMakeFiles/kallisto_core.dir/main.cpp.o: src/CMakeFiles/kallisto_core.dir/flags.make
 src/CMakeFiles/kallisto_core.dir/main.cpp.o: ../src/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/kallisto_core.dir/main.cpp.o"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/main.cpp.o -c /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/main.cpp
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/main.cpp.o -c /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/main.cpp
 
 src/CMakeFiles/kallisto_core.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kallisto_core.dir/main.cpp.i"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/main.cpp > CMakeFiles/kallisto_core.dir/main.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/main.cpp > CMakeFiles/kallisto_core.dir/main.cpp.i
 
 src/CMakeFiles/kallisto_core.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kallisto_core.dir/main.cpp.s"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/main.cpp -o CMakeFiles/kallisto_core.dir/main.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/main.cpp -o CMakeFiles/kallisto_core.dir/main.cpp.s
 
 src/CMakeFiles/kallisto_core.dir/main.cpp.o.requires:
 .PHONY : src/CMakeFiles/kallisto_core.dir/main.cpp.o.requires
@@ -258,17 +258,17 @@ src/CMakeFiles/kallisto_core.dir/main.cpp.o.provides.build: src/CMakeFiles/kalli
 
 src/CMakeFiles/kallisto_core.dir/MinCollector.cpp.o: src/CMakeFiles/kallisto_core.dir/flags.make
 src/CMakeFiles/kallisto_core.dir/MinCollector.cpp.o: ../src/MinCollector.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/kallisto_core.dir/MinCollector.cpp.o"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/MinCollector.cpp.o -c /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/MinCollector.cpp
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/MinCollector.cpp.o -c /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/MinCollector.cpp
 
 src/CMakeFiles/kallisto_core.dir/MinCollector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kallisto_core.dir/MinCollector.cpp.i"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/MinCollector.cpp > CMakeFiles/kallisto_core.dir/MinCollector.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/MinCollector.cpp > CMakeFiles/kallisto_core.dir/MinCollector.cpp.i
 
 src/CMakeFiles/kallisto_core.dir/MinCollector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kallisto_core.dir/MinCollector.cpp.s"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/MinCollector.cpp -o CMakeFiles/kallisto_core.dir/MinCollector.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/MinCollector.cpp -o CMakeFiles/kallisto_core.dir/MinCollector.cpp.s
 
 src/CMakeFiles/kallisto_core.dir/MinCollector.cpp.o.requires:
 .PHONY : src/CMakeFiles/kallisto_core.dir/MinCollector.cpp.o.requires
@@ -281,17 +281,17 @@ src/CMakeFiles/kallisto_core.dir/MinCollector.cpp.o.provides.build: src/CMakeFil
 
 src/CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.o: src/CMakeFiles/kallisto_core.dir/flags.make
 src/CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.o: ../src/PlaintextWriter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.o"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.o -c /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/PlaintextWriter.cpp
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.o -c /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/PlaintextWriter.cpp
 
 src/CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.i"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/PlaintextWriter.cpp > CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/PlaintextWriter.cpp > CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.i
 
 src/CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.s"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/PlaintextWriter.cpp -o CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/PlaintextWriter.cpp -o CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.s
 
 src/CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.o.requires:
 .PHONY : src/CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.o.requires
@@ -304,17 +304,17 @@ src/CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.o.provides.build: src/CMake
 
 src/CMakeFiles/kallisto_core.dir/ProcessReads.cpp.o: src/CMakeFiles/kallisto_core.dir/flags.make
 src/CMakeFiles/kallisto_core.dir/ProcessReads.cpp.o: ../src/ProcessReads.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/kallisto_core.dir/ProcessReads.cpp.o"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/ProcessReads.cpp.o -c /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/ProcessReads.cpp
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/ProcessReads.cpp.o -c /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/ProcessReads.cpp
 
 src/CMakeFiles/kallisto_core.dir/ProcessReads.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kallisto_core.dir/ProcessReads.cpp.i"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/ProcessReads.cpp > CMakeFiles/kallisto_core.dir/ProcessReads.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/ProcessReads.cpp > CMakeFiles/kallisto_core.dir/ProcessReads.cpp.i
 
 src/CMakeFiles/kallisto_core.dir/ProcessReads.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kallisto_core.dir/ProcessReads.cpp.s"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/ProcessReads.cpp -o CMakeFiles/kallisto_core.dir/ProcessReads.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/ProcessReads.cpp -o CMakeFiles/kallisto_core.dir/ProcessReads.cpp.s
 
 src/CMakeFiles/kallisto_core.dir/ProcessReads.cpp.o.requires:
 .PHONY : src/CMakeFiles/kallisto_core.dir/ProcessReads.cpp.o.requires
@@ -327,17 +327,17 @@ src/CMakeFiles/kallisto_core.dir/ProcessReads.cpp.o.provides.build: src/CMakeFil
 
 src/CMakeFiles/kallisto_core.dir/weights.cpp.o: src/CMakeFiles/kallisto_core.dir/flags.make
 src/CMakeFiles/kallisto_core.dir/weights.cpp.o: ../src/weights.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/kallisto_core.dir/weights.cpp.o"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/weights.cpp.o -c /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/weights.cpp
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kallisto_core.dir/weights.cpp.o -c /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/weights.cpp
 
 src/CMakeFiles/kallisto_core.dir/weights.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kallisto_core.dir/weights.cpp.i"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/weights.cpp > CMakeFiles/kallisto_core.dir/weights.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/weights.cpp > CMakeFiles/kallisto_core.dir/weights.cpp.i
 
 src/CMakeFiles/kallisto_core.dir/weights.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kallisto_core.dir/weights.cpp.s"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src/weights.cpp -o CMakeFiles/kallisto_core.dir/weights.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src/weights.cpp -o CMakeFiles/kallisto_core.dir/weights.cpp.s
 
 src/CMakeFiles/kallisto_core.dir/weights.cpp.o.requires:
 .PHONY : src/CMakeFiles/kallisto_core.dir/weights.cpp.o.requires
@@ -383,8 +383,8 @@ src/libkallisto_core.a: src/CMakeFiles/kallisto_core.dir/weights.cpp.o
 src/libkallisto_core.a: src/CMakeFiles/kallisto_core.dir/build.make
 src/libkallisto_core.a: src/CMakeFiles/kallisto_core.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library libkallisto_core.a"
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && $(CMAKE_COMMAND) -P CMakeFiles/kallisto_core.dir/cmake_clean_target.cmake
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kallisto_core.dir/link.txt --verbose=$(VERBOSE)
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && $(CMAKE_COMMAND) -P CMakeFiles/kallisto_core.dir/cmake_clean_target.cmake
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kallisto_core.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/kallisto_core.dir/build: src/libkallisto_core.a
@@ -406,10 +406,10 @@ src/CMakeFiles/kallisto_core.dir/requires: src/CMakeFiles/kallisto_core.dir/weig
 .PHONY : src/CMakeFiles/kallisto_core.dir/requires
 
 src/CMakeFiles/kallisto_core.dir/clean:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src && $(CMAKE_COMMAND) -P CMakeFiles/kallisto_core.dir/cmake_clean.cmake
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src && $(CMAKE_COMMAND) -P CMakeFiles/kallisto_core.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/kallisto_core.dir/clean
 
 src/CMakeFiles/kallisto_core.dir/depend:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/SS_RNA_seq/Code/kallisto_pseudo_v1 /data/SS_RNA_seq/Code/kallisto_pseudo_v1/src /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src /data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src/CMakeFiles/kallisto_core.dir/DependInfo.cmake --color=$(COLOR)
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/src /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src/CMakeFiles/kallisto_core.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/kallisto_core.dir/depend
 

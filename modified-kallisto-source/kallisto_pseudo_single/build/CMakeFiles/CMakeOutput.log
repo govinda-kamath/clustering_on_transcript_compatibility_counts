@@ -576,3 +576,33 @@ Linking C executable cmTryCompileExec2233124397
 make[1]: Leaving directory `/data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/CMakeFiles/CMakeTmp'
 
 
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3220770013/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3220770013.dir/build.make CMakeFiles/cmTryCompileExec3220770013.dir/build
+make[1]: Entering directory `/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3220770013.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3220770013.dir/CheckIncludeFiles.c.o   -c /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec3220770013
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3220770013.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3220770013.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec3220770013 -rdynamic 
+make[1]: Leaving directory `/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1241374623/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1241374623.dir/build.make CMakeFiles/cmTryCompileExec1241374623.dir/build
+make[1]: Entering directory `/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1241374623.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1241374623.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1241374623
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1241374623.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1241374623.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1241374623 -rdynamic -lpthread 
+make[1]: Leaving directory `/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/CMakeFiles/CMakeTmp'
+
+
