@@ -8,14 +8,14 @@ import timeit
 import getopt
 
 #This is created while running Zeisel_wrapper.py
-full_Zeisel_read_dir='../Zeisel_pipeline/reads_and_UMI_subsample100/'
+file_list='./SRR_in_3005.txt'
 
-read_files=sorted([x for x in os.listdir(full_Zeisel_read_dir) if x.endswith('.fastq.gz')])
-files_picked=np.random.choice(read_files,10,replace=False)
-files_used_in_paper=['SRR1545085.fastq.gz',  'SRR1546711.fastq.gz', 'SRR1547170.fastq.gz',
-                     'SRR1547184.fastq.gz',  'SRR1547881.fastq.gz', 'SRR1545232.fastq.gz',
-                     'SRR1547119.fastq.gz',  'SRR1547175.fastq.gz', 'SRR1547531.fastq.gz',  
-                     'SRR1548035.fastq.gz']
+cell_files=sorted(np.loadtxt(file_list,dtype=str))
+files_picked=np.random.choice(cell_files,10,replace=False)
+files_used_in_paper=['SRR1545085',  'SRR1546711', 'SRR1547170',
+                     'SRR1547184',  'SRR1547881', 'SRR1545232',
+                     'SRR1547119',  'SRR1547175', 'SRR1547531',  
+                     'SRR1548035']
 
 try:
     opts, args = getopt.getopt(sys.argv[1:],"k:pr:h:",["hacked-kallisto-path","as-in-paper=","reference-transcriptome","mouse-genome-for-hisat"])
@@ -41,7 +41,8 @@ for opt,arg in opts:
 if (not kallipso_path) or (not ref_transcriptome) or (not ref_genome):
     print ('usage is : \n python time_test.py -k hacked-kallisto-path -r mouse-reference-transcriptome -h path-to-file-containing-paths-to-mouse-genome [-p] \n -p indicates to use the same files as used in the simulation of the paper')
     sys.exit(1)
-    
+
+test_SRA_dir='./SRA/'
 test_read_dir='./reads/'
 test_kallisto_dir='./kallisto/'
 test_kallipso_dir='./TCC/'
@@ -52,6 +53,7 @@ kallisto_index='./kallisto_index/'
 bowtie_index='./bowtie_index/'
 hisat_index='./hisat_index/'
 
+os.system('rm -rf '+test_SRA_dir)
 os.system('rm -rf '+test_read_dir)
 os.system('rm -rf '+test_kallisto_dir)
 os.system('rm -rf '+test_kallipso_dir)
@@ -61,6 +63,8 @@ os.system('rm -rf '+test_wc_dir)
 os.system('rm -rf '+kallisto_index)
 os.system('rm -rf '+bowtie_index)
 os.system('rm -rf '+hisat_index)
+
+os.system('mkdir -p '+test_SRA_dir)
 os.system('mkdir -p '+test_read_dir)
 os.system('mkdir -p '+test_kallisto_dir)
 os.system('mkdir -p '+test_kallipso_dir)
@@ -71,9 +75,17 @@ os.system('mkdir -p '+kallisto_index)
 os.system('mkdir -p '+bowtie_index)
 os.system('mkdir -p '+hisat_index)
 
-print('Copying over files...')
+print('Copying over SRA files...')
+base_cmd1="wget -O ./SRA/"
+base_cmd2="ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP045/SRP045452/"
 for flnames in files_picked:
-    os.system('cp '+full_Zeisel_read_dir+flnames+' '+test_read_dir)
+    cmd=base_cmd1+flnames+".sra "+base_cmd2+flnames+"/"+flnames+'.sra'
+    os.system(cmd)
+    
+print('Converting SRA to fastq.gz files')
+for flname in files_picked:
+    cmd='fastq-dump --gzip '+ './SRA/'+flname+'.sra' ' -O '+ test_read_dir
+    os.system(cmd)
 
 print('Building kallisto index...')
 kallisto_index_path=kallisto_index+'Zeisel_index.idx'
