@@ -58,10 +58,10 @@ read_dir_to_pass=read_dir_base+sampling_suffix[0]+"/"
 for index in range(1,6):
     print('Sampling '+sampling_rates[index]+' fraction of reads...')
     out_dir_to_pass=read_dir_base+sampling_suffix[index]+"/"
-#    os.system('mkdir -p '+out_dir_to_pass)
-#    os.system('rm -f '+out_dir_to_pass+'*')
+    #os.system('mkdir -p '+out_dir_to_pass)
+    #os.system('rm -f '+out_dir_to_pass+'*')
     cmd='python sample_reads.py -i '+read_dir_to_pass+' -o '+out_dir_to_pass+' -k 100 -r '+sampling_rates[index]+' -n '+str(num_proc)
-#    os.system(cmd)
+    #os.system(cmd)
     
 
 print('Generating the Kallisto index (with hacked kallisto)...')
@@ -80,9 +80,9 @@ for index in range(6):
     print('Running hacked kallisto on '+sampling_rates[index]+' fraction of reads...')
     TCC_dir=TCC_base_dir+sampling_suffix[index]+"/"
     read_dir_to_pass=read_dir_base+sampling_suffix[index]+"/"
-#    os.system('mkdir -p '+TCC_dir)
-#    os.system('rm -f '+TCC_dir+'*')
-#    os.system('python get_pseudoalignments.py -i '+read_dir_to_pass+' -o '+TCC_dir+' -k '+kallipso_path+ ' -t '+ index_path +' -n '+ str(num_proc))
+    #os.system('mkdir -p '+TCC_dir)
+    #os.system('rm -f '+TCC_dir+'*')
+    #os.system('python get_pseudoalignments.py -i '+read_dir_to_pass+' -o '+TCC_dir+' -k '+kallipso_path+ ' -t '+ index_path +' -n '+ str(num_proc))
 
 print('Generating TCC distribution...')
 TCC_dist_base_flname='./Zeisel_TCC_distribution_subsample'
@@ -92,7 +92,7 @@ for index in range(6):
     TCC_dir=TCC_base_dir+sampling_suffix[index]+"/"
     TCC_dist_flname=TCC_dist_base_flname+sampling_suffix[index]+".dat"
     TCC_flname=TCC_base_flname+sampling_suffix[index]+".dat"
-#    os.system('python get_tcc_dist.py -i '+TCC_dir+' -m '+str(num_ec)+' -t '+TCC_flname+' -d '+ TCC_dist_flname)
+    #os.system('python get_tcc_dist.py -i '+TCC_dir+' -m '+str(num_ec)+' -t '+TCC_flname+' -d '+ TCC_dist_flname)
 
 print('Generating pairwise distances...')
 TCC_distance_base_flname='Zeisel_TCC_pairwise_JS_distance_subsample'
@@ -100,7 +100,7 @@ for index in range(6):
     TCC_dist_flname=TCC_dist_base_flname+sampling_suffix[index]+".dat"
     TCC_distance_flname=TCC_distance_base_flname+sampling_suffix[index]+".dat"
     print('Getting  pairwise distances for '+sampling_rates[index]+' fraction of reads...')
-#    os.system('python get_pairwise_distances.py '+TCC_dist_flname+' '+TCC_distance_flname+' '+str(num_proc))
+    #os.system('python get_pairwise_distances.py '+TCC_dist_flname+' '+TCC_distance_flname+' '+str(num_proc))
 
 print('Running Kallisto quant and writing out pseudo-bams...')
 quant_dir_base='Zeisel_kallisto_quant_subsample'
@@ -179,4 +179,11 @@ print('Running bowtie... May take days!!!')
 read_dir_to_pass=read_dir_base+sampling_suffix[0]+"/"
 bowtie_dir_base='./Zeisel_Bowtie_subsample'
 bowtie_dir100='./Zeisel_Bowtie_subsample'+sampling_suffix[0]+"/"
-os.system('python run_bowtie.py -i '+read_dir_to_pass+' -o '+bowtie_dir100+' -r '+bowtie_index_path+' -n '+str(num_proc))
+#os.system('python run_bowtie.py -i '+read_dir_to_pass+' -o '+bowtie_dir100+' -r '+bowtie_index_path+' -n '+str(num_proc))
+
+print('Sampling bam files ...')
+#os.system('python subsample_bams.py -s '+read_dir_base+' -b ' +bowtie_dir100 +' -o '+bowtie_dir_base+' -n '+str(num_proc))
+
+print('Counting UMIs...')
+os.system('python UMI_counting.py  -n '+str(num_proc))
+os.system('python UMI_counting_100.py  -n '+str(num_proc))
