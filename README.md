@@ -40,7 +40,7 @@ To run the code related to analysis on data of Trapnell et al., please follow th
 To run the code related to analysis on data of Zeisel et al., please follow the following instructions:
 
 * Build the modified version of kallisto for single ended reads. This is in [modified-kallisto-single](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/tree/master/modified-kallisto-source/kallisto_pseudo_single). This is also used for the timing analysis.
-* Download the mouse transcriptome (for example from [here](http://bio.math.berkeley.edu/kallisto/transcriptomes/Mus_musculus.GRCm38.rel79.cdna.all.fa.gz))
+* Download the mouse transcriptome (for example from [here](http://bio.math.berkeley.edu/kallisto/transcriptomes/Mus_musculus.GRCm38.rel79.cdna.all.fa.gz)).
 * Download the data set of Trapnell et al. from [here](ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP045/SRP045452/) to get all the .sra files in a single directory. We've provided a sample script that can do this in [get_files.py](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/blob/master/Zeisel_pipeline/get_files.py). 
 * Pass the directory of the SRA files, the path to the mouse trancriptome, and path to the modified version of kallisto for single end reads to [Zeisel_Analysis.ipynb](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/blob/master/Zeisel_pipeline/Zeisel_Analysis.ipynb), to verify all results on the dataset of Zeisel et al.
 
