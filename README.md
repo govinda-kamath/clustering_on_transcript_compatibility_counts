@@ -30,16 +30,22 @@ To run the scripts in the iPython notebooks, the following Python modules are re
 * [pysam](https://github.com/pysam-developers/pysam)
 * [networkx](https://networkx.github.io/documentation/latest/install.html)
 
-To run the code please follow the following order:
+To run the code related to analysis on data of Trapnell et al., please follow the following instructions:
 
-* Build the modified version of kallisto for paired end reads. This is in [modified-kallisto-paired](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/tree/master/modified-kallisto-source/kallisto_pseudo_paired). This is necessary to run the analysis of the data of Trapnell et. al.
-* Download the human transcriptome (for example from [here](http://bio.math.berkeley.edu/kallisto/transcriptomes/Homo_sapiens.GRCh38.rel79.cdna.all.fa.gz)). This is also used for the analysis of Trapnell et al.
-* Download the data set of Trapnell et al. from [here](ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP033/SRP033135/) to get all SRA files in a directory. We've provided a sample script that can do this in [get_files.py](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/blob/master/Trapnell_pipeline/get_files.py). 
+* Build the modified version of kallisto for paired end reads. This is in [modified-kallisto-paired](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/tree/master/modified-kallisto-source/kallisto_pseudo_paired). 
+* Download the human transcriptome (for example from [here](http://bio.math.berkeley.edu/kallisto/transcriptomes/Homo_sapiens.GRCh38.rel79.cdna.all.fa.gz)). 
+* Download the data set of Trapnell et al. from [here](ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP033/SRP033135/) to get all the .sra files in a single directory. We've provided a sample script that can do this in [get_files.py](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/blob/master/Trapnell_pipeline/get_files.py). 
 * Pass the directory of the SRA files, the path to the human trancriptome, and path to the modified version of kallisto for paired end reads to [Trapnell_Analysis.ipynb](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/blob/master/Trapnell_pipeline/Trapnell_Analysis.ipynb), to verify all results on the dataset of Trapnell et al.
+
+To run the code related to analysis on data of Zeisel et al., please follow the following instructions:
+
+* Build the modified version of kallisto for single ended reads. This is in [modified-kallisto-single](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/tree/master/modified-kallisto-source/kallisto_pseudo_single). This is also used for the timing analysis.
 * Download the mouse transcriptome (for example from [here](http://bio.math.berkeley.edu/kallisto/transcriptomes/Mus_musculus.GRCm38.rel79.cdna.all.fa.gz))
-* Build the modified version of kallisto for single ended reads. This is in [modified-kallisto-single](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/tree/master/modified-kallisto-source/kallisto_pseudo_single). This is necessary to run the analysis of the data of Zeisel et. al and for the timing analysis.
+* Download the data set of Trapnell et al. from [here](ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP045/SRP045452/) to get all the .sra files in a single directory. We've provided a sample script that can do this in [get_files.py](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/blob/master/Zeisel_pipeline/get_files.py). 
+* Pass the directory of the SRA files, the path to the mouse trancriptome, and path to the modified version of kallisto for single end reads to [Zeisel_Analysis.ipynb](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/blob/master/Zeisel_pipeline/Zeisel_Analysis.ipynb), to verify all results on the dataset of Zeisel et al.
+
+
 * Download the Mouse genome (for example from [here](ftp://ftp.ncbi.nih.gov/genomes/M_musculus/Assembled_chromosomes/seq/)) and gunzip all the fa.gz files. This is necessary only for running the timing analysis.
-* Down
 
 The figure below compares our TCC clustering pipeline to the conventional cell clustering pipeline. Please refer to our manuscript for more details.
 
