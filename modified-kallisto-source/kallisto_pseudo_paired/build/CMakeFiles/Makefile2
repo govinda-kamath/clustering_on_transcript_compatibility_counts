@@ -47,10 +47,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/SS_RNA_seq/Code/kallisto_pseudo_paired
+CMAKE_SOURCE_DIR = /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build
+CMAKE_BINARY_DIR = /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build
 
 #=============================================================================
 # Directory level rules for directory src
@@ -76,7 +76,7 @@ src/preinstall: src/CMakeFiles/kallisto.dir/preinstall
 src/CMakeFiles/kallisto.dir/all: src/CMakeFiles/kallisto_core.dir/all
 	$(MAKE) -f src/CMakeFiles/kallisto.dir/build.make src/CMakeFiles/kallisto.dir/depend
 	$(MAKE) -f src/CMakeFiles/kallisto.dir/build.make src/CMakeFiles/kallisto.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build/CMakeFiles  1
 	@echo "Built target kallisto"
 .PHONY : src/CMakeFiles/kallisto.dir/all
 
@@ -86,9 +86,9 @@ all: src/CMakeFiles/kallisto.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/kallisto.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/kallisto.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/kallisto.dir/rule
 
 # Convenience name for target.
@@ -120,7 +120,7 @@ clean: src/CMakeFiles/kallisto.dir/clean
 src/CMakeFiles/kallisto_core.dir/all:
 	$(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/depend
 	$(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build/CMakeFiles  2 3 4 5 6 7 8 9 10 11 12 13 14
+	$(CMAKE_COMMAND) -E cmake_progress_report /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build/CMakeFiles  2 3 4 5 6 7 8 9 10 11 12 13 14
 	@echo "Built target kallisto_core"
 .PHONY : src/CMakeFiles/kallisto_core.dir/all
 
@@ -130,9 +130,9 @@ all: src/CMakeFiles/kallisto_core.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/kallisto_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/kallisto_core.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/kallisto_core.dir/rule
 
 # Convenience name for target.
