@@ -52,24 +52,24 @@ kallisto_index='./kallisto_index/'
 bowtie_index='./bowtie_index/'
 hisat_index='./hisat_index/'
 
-#os.system('rm -rf '+test_read_dir)
-#os.system('rm -rf '+test_kallisto_dir)
-#os.system('rm -rf '+test_kallipso_dir)
-#os.system('rm -rf '+test_bowtie1_dir)
-#os.system('rm -rf '+test_hisat_dir)
-#os.system('rm -rf '+test_wc_dir)
-#os.system('rm -rf '+kallisto_index)
-#os.system('rm -rf '+bowtie_index)
-#os.system('rm -rf '+hisat_index)
+os.system('rm -rf '+test_read_dir)
+os.system('rm -rf '+test_kallisto_dir)
+os.system('rm -rf '+test_kallipso_dir)
+os.system('rm -rf '+test_bowtie1_dir)
+os.system('rm -rf '+test_hisat_dir)
+os.system('rm -rf '+test_wc_dir)
+os.system('rm -rf '+kallisto_index)
+os.system('rm -rf '+bowtie_index)
+os.system('rm -rf '+hisat_index)
 os.system('mkdir -p '+test_read_dir)
 os.system('mkdir -p '+test_kallisto_dir)
 os.system('mkdir -p '+test_kallipso_dir)
 os.system('mkdir -p '+test_bowtie1_dir)
 os.system('mkdir -p '+test_hisat_dir)
 os.system('mkdir -p '+test_wc_dir)
-#os.system('mkdir -p '+kallisto_index)
-#os.system('mkdir -p '+bowtie_index)
-#os.system('mkdir -p '+hisat_index)
+os.system('mkdir -p '+kallisto_index)
+os.system('mkdir -p '+bowtie_index)
+os.system('mkdir -p '+hisat_index)
 
 print('Copying over files...')
 for flnames in files_picked:
@@ -77,20 +77,20 @@ for flnames in files_picked:
 
 print('Building kallisto index...')
 kallisto_index_path=kallisto_index+'Zeisel_index.idx'
-#os.system(kallipso_path+' index -i '+kallisto_index_path+' '+ref_transcriptome)
+os.system(kallipso_path+' index -i '+kallisto_index_path+' '+ref_transcriptome)
 
 print('Building hisat index...')
 hisat_ip_paths=''
 with open('hisat_chr_path_list.txt','r') as f:
     hisat_ip_paths=f.readline()
 hisat_index_path=hisat_index+'Zeisel_index'
-#os.system('hisat-build  --offrate 5 '+hisat_ip_paths+' '+hisat_index_path)
+os.system('hisat-build  --offrate 5 '+hisat_ip_paths+' '+hisat_index_path)
 
 print('Getting bowtie indices...')
 bowtie_index_dir='./bowtie_index/'
 os.system('mkdir -p '+bowtie_index_dir)
 bowtie_index_path=bowtie_index_dir+'Zeisel_index.all'
-#os.system('bowtie-build --offrate=5 '+ref_transcriptome+' '+bowtie_index_path)
+os.system('bowtie-build --offrate=5 '+ref_transcriptome+' '+bowtie_index_path)
 
 
 print('Timing kallisto...')
@@ -108,10 +108,10 @@ def run_kallisto():
         #print cmd
         os.system(cmd)
 
-#x=timeit.timeit(run_kallisto,number=1)
-#op_file=test_kallisto_dir+'time.time'
-#with open(op_file,'w') as f:
-#    f.write(str(x))
+x=timeit.timeit(run_kallisto,number=1)
+op_file=test_kallisto_dir+'time.time'
+with open(op_file,'w') as f:
+    f.write(str(x))
     
 print('Timing hacked kallisto...')
 def make_kallipso_path_global():
@@ -129,10 +129,10 @@ def run_kallipso():
         command = kallipso_path+' pseudoalign -i '+ ref_path+ ' -o ' + test_kallipso_dir+cellname+'.counts' + ' ' + read_path
         #print command
         os.system(command)
-#x=timeit.timeit(run_kallipso,number=1)
-#op_file=test_kallipso_dir+'time.time'
-#with open(op_file,'w') as f:
-#    f.write(str(x))
+x=timeit.timeit(run_kallipso,number=1)
+op_file=test_kallipso_dir+'time.time'
+with open(op_file,'w') as f:
+    f.write(str(x))
     
 print('Timing word count...')
 def run_word_count():
@@ -141,10 +141,10 @@ def run_word_count():
     for flname in flnames:
         read_path=test_read_dir+flname
         os.system('wc '+read_path)
-#x=timeit.timeit(run_word_count,number=1)
-#op_file=test_wc_dir+'time.time'
-#with open(op_file,'w') as f:
-#    f.write(str(x))        
+x=timeit.timeit(run_word_count,number=1)
+op_file=test_wc_dir+'time.time'
+with open(op_file,'w') as f:
+    f.write(str(x))        
 
 print('Timing hisat...')
 def run_hisat():
@@ -166,10 +166,10 @@ def run_hisat():
         os.system(cmd)
         os.system(cmd1)
         
-#x=timeit.timeit(run_hisat,number=1)
-#op_file=test_hisat_dir+'time.time'
-#with open(op_file,'w') as f:
-#    f.write(str(x))
+x=timeit.timeit(run_hisat,number=1)
+op_file=test_hisat_dir+'time.time'
+with open(op_file,'w') as f:
+    f.write(str(x))
 
 print('Timing bowtie...')
 def run_bowtie1():
