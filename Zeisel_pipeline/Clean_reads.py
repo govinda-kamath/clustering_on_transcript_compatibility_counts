@@ -1,16 +1,12 @@
+# Separates the reads and UMIs in Zeisel's data. Takes care of the poly-G sequences.
+# For more details, please refer to http://www.nature.com/nmeth/journal/v11/n2/full/nmeth.2772.html.
 
-# coding: utf-8
-
-# In[1]:
 import itertools
 import os
 import multiprocessing as mp
 import re
 import getopt
 import sys
-
-
-# In[56]:
 
 try:
     opts, args = getopt.getopt(sys.argv[1:],"i:o:n:t:",["idir=","odir=","njobs=","temp-dir="])
@@ -25,8 +21,6 @@ temp_dir=''
 num_proc=1
 
 for opt,arg in opts:
-    #print (opt)
-    #print (arg)
     if opt in ("-i", "--idir"):
         read_dir=arg
     elif opt in ("-o","--odir"):
@@ -77,26 +71,12 @@ def clean_file(fltuple):
     #os.system(cmd3)
     os.system(cmd4)
     os.system(cmd5)
-    
-
-
-
-
-# In[58]:
 
 flnames=sorted(os.listdir(read_dir))
 fltuple=itertools.product([read_dir],[out_dir],[temp_dir],flnames)
-
 
 pool=mp.Pool(processes=num_proc)
 pool.map(clean_file,fltuple)
 #for tup in fltuple:
 #    clean_file(tup)
-
-
-
-
-# In[ ]:
-
-
 
