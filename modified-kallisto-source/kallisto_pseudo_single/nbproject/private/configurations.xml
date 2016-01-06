@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="CMakeFiles">
+        <df name="3.2.2">
+          <df name="CompilerIdC">
+            <in>CMakeCCompilerId.c</in>
+          </df>
+          <df name="CompilerIdCXX">
+            <in>CMakeCXXCompilerId.cpp</in>
+          </df>
+        </df>
+        <df name="CMakeTmp">
+        </df>
+        <in>feature_tests.c</in>
+        <in>feature_tests.cxx</in>
+      </df>
+      <df name="ext">
+        <df name="catch">
+        </df>
+      </df>
+      <df name="src">
+        <df name="CMakeFiles">
+          <df name="kallisto.dir">
+          </df>
+          <df name="kallisto_core.dir">
+          </df>
+        </df>
+        <in>Bootstrap.cpp</in>
+        <in>Bootstrap.h</in>
+        <in>EMAlgorithm.h</in>
+        <in>H5Writer.cpp</in>
+        <in>H5Writer.h</in>
+        <in>Inspect.h</in>
+        <in>Kmer.cpp</in>
+        <in>Kmer.hpp</in>
+        <in>KmerHashTable.h</in>
+        <in>KmerIndex.cpp</in>
+        <in>KmerIndex.h</in>
+        <in>KmerIterator.cpp</in>
+        <in>KmerIterator.hpp</in>
+        <in>MinCollector.cpp</in>
+        <in>MinCollector.h</in>
+        <in>Multinomial.hpp</in>
+        <in>PlaintextWriter.cpp</in>
+        <in>PlaintextWriter.h</in>
+        <in>ProcessReads.cpp</in>
+        <in>ProcessReads.h</in>
+        <in>common.cpp</in>
+        <in>common.h</in>
+        <in>h5utils.cpp</in>
+        <in>h5utils.h</in>
+        <in>hash.cpp</in>
+        <in>hash.hpp</in>
+        <in>kseq.h</in>
+        <in>main.cpp</in>
+        <in>weights.cpp</in>
+        <in>weights.h</in>
+      </df>
+      <df name="test">
+        <df name="out">
+        </df>
+        <df name="output_cell_id.0001">
+        </df>
+      </df>
+      <df name="unit_tests">
+        <df name="input">
+        </df>
+        <in>main.cpp</in>
+        <in>test_index.cpp</in>
+        <in>test_kmerhashtable.cpp</in>
+        <in>test_multinomial.cpp</in>
+        <in>test_weights.cpp</in>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>4</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>
