@@ -1,2 +1,2 @@
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src/CMakeFiles/kallisto_core.dir
-/data/SS_RNA_seq/Code/kallisto_pseudo_v1/build/src/CMakeFiles/kallisto.dir
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src/CMakeFiles/kallisto_core.dir
+/data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_single/build/src/CMakeFiles/kallisto.dir
