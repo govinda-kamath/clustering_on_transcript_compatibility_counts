@@ -185,5 +185,23 @@ print('Sampling bam files ...')
 #os.system('python subsample_bams.py -s '+read_dir_base+' -b ' +bowtie_dir100 +' -o '+bowtie_dir_base+' -n '+str(num_proc))
 
 print('Counting UMIs...')
-os.system('python UMI_counting.py  -n '+str(num_proc))
-os.system('python UMI_counting_100.py  -n '+str(num_proc))
+#os.system('python UMI_counting.py  -n '+str(num_proc))
+#os.system('python UMI_counting_100.py  -n '+str(num_proc))
+
+UMI_dir_base='./Zeisel_UMI_counts_subsample'
+UMI_distribution_file_base='./Zeisel_UMI_distribution_subsample'
+UMI_file_base='./Zeisel_UMI_subsample'
+print('Getting UMI matrices....')
+for index in range(6):
+    UMI_file=UMI_file_base+sampling_suffix[index]+'.dat'
+    UMI_distribution_file=UMI_distribution_file_base+sampling_suffix[index]+'.dat'
+    UMI_dir=UMI_dir_base+sampling_suffix[index]+'/'
+    os.system('python get_UMI_count_matrices.py -i '+ UMI_dir +' -t '+UMI_file+' -d '+UMI_distribution_file)
+    
+print('Getting pairwise distances between UMI matrices...')
+UMI_distance_base='./Zeisel_UMI_pairwise_SJ_subsample'
+for index in range(6):
+    UMI_distance_file=UMI_distance_base+sampling_suffix[index]+'.dat'
+    UMI_distribution_file=UMI_distribution_file_base+sampling_suffix[index]+'.dat'
+    os.system('python get_pairwise_distances.py '+UMI_distribution_file+' '+UMI_distance_file+' '+str(num_proc))
+    
