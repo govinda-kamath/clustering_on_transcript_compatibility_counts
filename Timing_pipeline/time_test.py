@@ -178,7 +178,7 @@ def run_bowtie1():
     test_read_dir='./reads/'
     
     flnames=sorted(os.listdir(test_read_dir))
-    for flname in flnames[:1]:
+    for flname in flnames:
         out = test_bowtie1_dir + flname.split('.')[0]
         os.system('mkdir -p ' + out)
         BTcmd = 'gzip -dc '+test_read_dir+flname+' | bowtie -aS --offrate 1 '+index+' - | samtools view -Sb - > '+out+'/hits.bam'
