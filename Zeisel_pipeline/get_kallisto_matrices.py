@@ -19,7 +19,7 @@ def data_to_dist(X):
 # In[3]:
 
 try:
-    opts, args = getopt.getopt(sys.argv[1:],"i:t:d:",["idir=","num-eq-classes=","TPM-file=","TPMD-file="])
+    opts, args = getopt.getopt(sys.argv[1:],"i:t:d:",["idir=","TPM-file=","TPMD-file="])
 except getopt.GetoptError:
     print ("getopterrror")
     print ('usage is : \n python get_kallisto_matrices.py -i input_expression_dir  -d path-to-output-distribution-file')
