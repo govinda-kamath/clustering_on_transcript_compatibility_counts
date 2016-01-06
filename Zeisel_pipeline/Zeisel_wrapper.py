@@ -1,7 +1,11 @@
+# Runs the full Zeisel pipeline. 
+# Start from a folder of downloaded SRR files. Zeisel's 3005 mouse brain cell dataset can be found at http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE60361.
+# The pipeline runs kallisto to get the TCCs for each cell, ultimately outputting the TCC matrix (3005-by-#Eq classes).
+# The pipeline also uses the TCC matrix to compute the pairwise distances between cells, resulting in a 3005-by-3005 distance matrix.
+
 import os
 import getopt
 import sys
-
 
 try:
     opts, args = getopt.getopt(sys.argv[1:],"i:n:k:t:",["idir=","njobs=","hacked-kallisto-path=","reference-transcriptome="])
@@ -117,7 +121,7 @@ for index in range(6):
     print('Getting kallisto matrices for '+sampling_rates[index]+' fraction of reads...')
     quant_dir= quant_dir_base+sampling_suffix[index]+"/"
     kal_gene_dist_file=kal_gene_dist_file_base+sampling_suffix[index]+".dat"
-    os.system('python get_kallisto_matrices.py -i '+quant_dir+' -d '+kal_gene_dist_file)
+    #os.system('python get_kallisto_matrices.py -i '+quant_dir+' -d '+kal_gene_dist_file)
 
 print('Generating pairwise distances...')
 kal_gene_distance_file_base='./Zeisel_kallisto_gene_pairwise_SJ_subsample'
@@ -125,7 +129,7 @@ for index in range(6):
     print('Getting kallisto pairwise distances for '+sampling_rates[index]+' fraction of reads...')
     kal_gene_dist_file=kal_gene_dist_file_base+sampling_suffix[index]+".dat"
     kal_gene_distance_file=kal_gene_distance_file_base+sampling_suffix[index]+".dat"
-    os.system('python get_pairwise_distances.py '+kal_gene_dist_file+' '+kal_gene_distance_file+' '+str(num_proc))
+    #os.system('python get_pairwise_distances.py '+kal_gene_dist_file+' '+kal_gene_distance_file+' '+str(num_proc))
     
 print('Getting read ids for subsampled reads...')
 for index in range(6):
@@ -155,7 +159,7 @@ for index in range(6):
     TCC_UMI_tmp_dir=TCC_UMI_tmp_base_dir+sampling_suffix[index]+"/"
     TCC_UMI_file=TCC_UMI_file_base+sampling_suffix[index]+'.dat'
     TCC_UMI_distribution_file=TCC_UMI_distribution_file_base+sampling_suffix[index]+'.dat'
-    os.system('python get_UMI_matrices.py -i '+TCC_UMI_tmp_dir+' -t '+TCC_UMI_file+' -d '+TCC_UMI_distribution_file)
+    #os.system('python get_UMI_matrices.py -i '+TCC_UMI_tmp_dir+' -t '+TCC_UMI_file+' -d '+TCC_UMI_distribution_file)
     
 print('Generating pairwise distances...')
 TCC_UMI_distance_file_base='./Zeisel_TCC_UMI_pairwise_JS_subsample'
@@ -163,4 +167,16 @@ for index in range(6):
     print('Getting pairwise distance of the TCC UMI matrix for '+sampling_rates[index]+' fraction of reads...')
     TCC_UMI_distance_file=TCC_UMI_distance_file_base+sampling_suffix[index]+'.dat'
     TCC_UMI_distribution_file=TCC_UMI_distribution_file_base+sampling_suffix[index]+'.dat'
-    os.system('python get_pairwise_distances.py '+TCC_UMI_distribution_file+' '+TCC_UMI_distance_file+' '+str(num_proc))
+    #os.system('python get_pairwise_distances.py '+TCC_UMI_distribution_file+' '+TCC_UMI_distance_file+' '+str(num_proc))
+
+print('Getting bowtie indices...')
+bowtie_index_dir='./bowtie_index/'
+os.system('mkdir -p '+bowtie_index_dir)
+bowtie_index_path=bowtie_index_dir+'Zeisel_index.all'
+#os.system('bowtie-build --offrate=1 '+ref_transcriptome+' '+bowtie_index_path)
+
+print('Running bowtie... May take days!!!')
+read_dir_to_pass=read_dir_base+sampling_suffix[0]+"/"
+bowtie_dir_base='./Zeisel_Bowtie_subsample'
+bowtie_dir100='./Zeisel_Bowtie_subsample'+sampling_suffix[0]+"/"
+os.system('python run_bowtie.py -i '+read_dir_to_pass+' -o '+bowtie_dir100+' -r '+bowtie_index_path+' -n '+str(num_proc))

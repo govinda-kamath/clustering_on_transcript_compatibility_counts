@@ -86,6 +86,13 @@ with open('hisat_chr_path_list.txt','r') as f:
 hisat_index_path=hisat_index+'Zeisel_index'
 #os.system('hisat-build  --offrate 5 '+hisat_ip_paths+' '+hisat_index_path)
 
+print('Getting bowtie indices...')
+bowtie_index_dir='./bowtie_index/'
+os.system('mkdir -p '+bowtie_index_dir)
+bowtie_index_path=bowtie_index_dir+'Zeisel_index.all'
+#os.system('bowtie-build --offrate=5 '+ref_transcriptome+' '+bowtie_index_path)
+
+
 print('Timing kallisto...')
 def run_kallisto():
     test_kallisto_dir='./kallisto/'
@@ -159,7 +166,28 @@ def run_hisat():
         os.system(cmd)
         os.system(cmd1)
         
-x=timeit.timeit(run_hisat,number=1)
-op_file=test_hisat_dir+'time.time'
+#x=timeit.timeit(run_hisat,number=1)
+#op_file=test_hisat_dir+'time.time'
+#with open(op_file,'w') as f:
+#    f.write(str(x))
+
+print('Timing bowtie...')
+def run_bowtie1():
+    index = './bowtie_index/Zeisel_index.all'
+    test_bowtie1_dir='./bowtie1/'
+    test_read_dir='./reads/'
+    
+    flnames=sorted(os.listdir(test_read_dir))
+    for flname in flnames[:1]:
+        out = test_bowtie1_dir + flname.split('.')[0]
+        os.system('mkdir -p ' + out)
+        BTcmd = 'gzip -dc '+test_read_dir+flname+' | bowtie -aS --offrate 1 '+index+' - | samtools view -Sb - > '+out+'/hits.bam'
+        #print BTcmd
+        os.system(BTcmd)
+    
+x=timeit.timeit(run_bowtie1,number=1)
+op_file=test_bowtie1_dir+'time.time'
 with open(op_file,'w') as f:
-    f.write(str(x))   
+    f.write(str(x)) 
+
+        
