@@ -1,0 +1,20 @@
+Scanning dependencies of target kallisto_core
+[  7%] Building CXX object src/CMakeFiles/kallisto_core.dir/Bootstrap.cpp.o
+[ 14%] Building CXX object src/CMakeFiles/kallisto_core.dir/common.cpp.o
+[ 21%] Building CXX object src/CMakeFiles/kallisto_core.dir/h5utils.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/kallisto_core.dir/H5Writer.cpp.o
+[ 35%] Building CXX object src/CMakeFiles/kallisto_core.dir/hash.cpp.o
+[ 42%] Building CXX object src/CMakeFiles/kallisto_core.dir/Kmer.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/kallisto_core.dir/KmerIndex.cpp.o
+[ 57%] Building CXX object src/CMakeFiles/kallisto_core.dir/KmerIterator.cpp.o
+[ 64%] Building CXX object src/CMakeFiles/kallisto_core.dir/main.cpp.o
+[ 71%] Building CXX object src/CMakeFiles/kallisto_core.dir/MinCollector.cpp.o
+[ 78%] Building CXX object src/CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.o
+[ 85%] Building CXX object src/CMakeFiles/kallisto_core.dir/ProcessReads.cpp.o
+[ 92%] Building CXX object src/CMakeFiles/kallisto_core.dir/weights.cpp.o
+Linking CXX static library libkallisto_core.a
+[ 92%] Built target kallisto_core
+Scanning dependencies of target kallisto
+[100%] Building CXX object src/CMakeFiles/kallisto.dir/main.cpp.o
+Linking CXX executable kallisto
+[100%] Built target kallisto

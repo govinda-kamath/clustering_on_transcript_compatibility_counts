@@ -1,0 +1,2 @@
+/Users/bill/Dropbox/WoRk/Eclipse_Work/kallisto_pseudo/src/CMakeFiles/kallisto_core.dir
+/Users/bill/Dropbox/WoRk/Eclipse_Work/kallisto_pseudo/src/CMakeFiles/kallisto.dir
