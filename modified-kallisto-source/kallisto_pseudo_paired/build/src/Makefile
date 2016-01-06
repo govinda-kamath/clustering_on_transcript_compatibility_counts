@@ -42,10 +42,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/SS_RNA_seq/Code/kallisto_pseudo_paired
+CMAKE_SOURCE_DIR = /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build
+CMAKE_BINARY_DIR = /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -103,14 +103,14 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(CMAKE_COMMAND) -E cmake_progress_start /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build/CMakeFiles /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build/src/CMakeFiles/progress.marks
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build/CMakeFiles 0
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(CMAKE_COMMAND) -E cmake_progress_start /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build/CMakeFiles /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build/src/CMakeFiles/progress.marks
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -119,22 +119,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/kallisto.dir/rule:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/kallisto.dir/rule
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/kallisto.dir/rule
 .PHONY : src/CMakeFiles/kallisto.dir/rule
 
 # Convenience name for target.
@@ -143,17 +143,17 @@ kallisto: src/CMakeFiles/kallisto.dir/rule
 
 # fast build rule for target.
 kallisto/fast:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto.dir/build.make src/CMakeFiles/kallisto.dir/build
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto.dir/build.make src/CMakeFiles/kallisto.dir/build
 .PHONY : kallisto/fast
 
 # Manual pre-install relink rule for target.
 kallisto/preinstall:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/kallisto.dir/preinstall
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/kallisto.dir/preinstall
 .PHONY : kallisto/preinstall
 
 # Convenience name for target.
 src/CMakeFiles/kallisto_core.dir/rule:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/kallisto_core.dir/rule
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/kallisto_core.dir/rule
 .PHONY : src/CMakeFiles/kallisto_core.dir/rule
 
 # Convenience name for target.
@@ -162,7 +162,7 @@ kallisto_core: src/CMakeFiles/kallisto_core.dir/rule
 
 # fast build rule for target.
 kallisto_core/fast:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/build
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/build
 .PHONY : kallisto_core/fast
 
 Bootstrap.o: Bootstrap.cpp.o
@@ -170,7 +170,7 @@ Bootstrap.o: Bootstrap.cpp.o
 
 # target to build an object file
 Bootstrap.cpp.o:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/Bootstrap.cpp.o
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/Bootstrap.cpp.o
 .PHONY : Bootstrap.cpp.o
 
 Bootstrap.i: Bootstrap.cpp.i
@@ -178,7 +178,7 @@ Bootstrap.i: Bootstrap.cpp.i
 
 # target to preprocess a source file
 Bootstrap.cpp.i:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/Bootstrap.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/Bootstrap.cpp.i
 .PHONY : Bootstrap.cpp.i
 
 Bootstrap.s: Bootstrap.cpp.s
@@ -186,7 +186,7 @@ Bootstrap.s: Bootstrap.cpp.s
 
 # target to generate assembly for a file
 Bootstrap.cpp.s:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/Bootstrap.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/Bootstrap.cpp.s
 .PHONY : Bootstrap.cpp.s
 
 H5Writer.o: H5Writer.cpp.o
@@ -194,7 +194,7 @@ H5Writer.o: H5Writer.cpp.o
 
 # target to build an object file
 H5Writer.cpp.o:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/H5Writer.cpp.o
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/H5Writer.cpp.o
 .PHONY : H5Writer.cpp.o
 
 H5Writer.i: H5Writer.cpp.i
@@ -202,7 +202,7 @@ H5Writer.i: H5Writer.cpp.i
 
 # target to preprocess a source file
 H5Writer.cpp.i:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/H5Writer.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/H5Writer.cpp.i
 .PHONY : H5Writer.cpp.i
 
 H5Writer.s: H5Writer.cpp.s
@@ -210,7 +210,7 @@ H5Writer.s: H5Writer.cpp.s
 
 # target to generate assembly for a file
 H5Writer.cpp.s:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/H5Writer.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/H5Writer.cpp.s
 .PHONY : H5Writer.cpp.s
 
 Kmer.o: Kmer.cpp.o
@@ -218,7 +218,7 @@ Kmer.o: Kmer.cpp.o
 
 # target to build an object file
 Kmer.cpp.o:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/Kmer.cpp.o
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/Kmer.cpp.o
 .PHONY : Kmer.cpp.o
 
 Kmer.i: Kmer.cpp.i
@@ -226,7 +226,7 @@ Kmer.i: Kmer.cpp.i
 
 # target to preprocess a source file
 Kmer.cpp.i:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/Kmer.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/Kmer.cpp.i
 .PHONY : Kmer.cpp.i
 
 Kmer.s: Kmer.cpp.s
@@ -234,7 +234,7 @@ Kmer.s: Kmer.cpp.s
 
 # target to generate assembly for a file
 Kmer.cpp.s:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/Kmer.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/Kmer.cpp.s
 .PHONY : Kmer.cpp.s
 
 KmerIndex.o: KmerIndex.cpp.o
@@ -242,7 +242,7 @@ KmerIndex.o: KmerIndex.cpp.o
 
 # target to build an object file
 KmerIndex.cpp.o:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/KmerIndex.cpp.o
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/KmerIndex.cpp.o
 .PHONY : KmerIndex.cpp.o
 
 KmerIndex.i: KmerIndex.cpp.i
@@ -250,7 +250,7 @@ KmerIndex.i: KmerIndex.cpp.i
 
 # target to preprocess a source file
 KmerIndex.cpp.i:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/KmerIndex.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/KmerIndex.cpp.i
 .PHONY : KmerIndex.cpp.i
 
 KmerIndex.s: KmerIndex.cpp.s
@@ -258,7 +258,7 @@ KmerIndex.s: KmerIndex.cpp.s
 
 # target to generate assembly for a file
 KmerIndex.cpp.s:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/KmerIndex.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/KmerIndex.cpp.s
 .PHONY : KmerIndex.cpp.s
 
 KmerIterator.o: KmerIterator.cpp.o
@@ -266,7 +266,7 @@ KmerIterator.o: KmerIterator.cpp.o
 
 # target to build an object file
 KmerIterator.cpp.o:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/KmerIterator.cpp.o
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/KmerIterator.cpp.o
 .PHONY : KmerIterator.cpp.o
 
 KmerIterator.i: KmerIterator.cpp.i
@@ -274,7 +274,7 @@ KmerIterator.i: KmerIterator.cpp.i
 
 # target to preprocess a source file
 KmerIterator.cpp.i:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/KmerIterator.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/KmerIterator.cpp.i
 .PHONY : KmerIterator.cpp.i
 
 KmerIterator.s: KmerIterator.cpp.s
@@ -282,7 +282,7 @@ KmerIterator.s: KmerIterator.cpp.s
 
 # target to generate assembly for a file
 KmerIterator.cpp.s:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/KmerIterator.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/KmerIterator.cpp.s
 .PHONY : KmerIterator.cpp.s
 
 MinCollector.o: MinCollector.cpp.o
@@ -290,7 +290,7 @@ MinCollector.o: MinCollector.cpp.o
 
 # target to build an object file
 MinCollector.cpp.o:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/MinCollector.cpp.o
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/MinCollector.cpp.o
 .PHONY : MinCollector.cpp.o
 
 MinCollector.i: MinCollector.cpp.i
@@ -298,7 +298,7 @@ MinCollector.i: MinCollector.cpp.i
 
 # target to preprocess a source file
 MinCollector.cpp.i:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/MinCollector.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/MinCollector.cpp.i
 .PHONY : MinCollector.cpp.i
 
 MinCollector.s: MinCollector.cpp.s
@@ -306,7 +306,7 @@ MinCollector.s: MinCollector.cpp.s
 
 # target to generate assembly for a file
 MinCollector.cpp.s:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/MinCollector.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/MinCollector.cpp.s
 .PHONY : MinCollector.cpp.s
 
 PlaintextWriter.o: PlaintextWriter.cpp.o
@@ -314,7 +314,7 @@ PlaintextWriter.o: PlaintextWriter.cpp.o
 
 # target to build an object file
 PlaintextWriter.cpp.o:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.o
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.o
 .PHONY : PlaintextWriter.cpp.o
 
 PlaintextWriter.i: PlaintextWriter.cpp.i
@@ -322,7 +322,7 @@ PlaintextWriter.i: PlaintextWriter.cpp.i
 
 # target to preprocess a source file
 PlaintextWriter.cpp.i:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.i
 .PHONY : PlaintextWriter.cpp.i
 
 PlaintextWriter.s: PlaintextWriter.cpp.s
@@ -330,7 +330,7 @@ PlaintextWriter.s: PlaintextWriter.cpp.s
 
 # target to generate assembly for a file
 PlaintextWriter.cpp.s:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/PlaintextWriter.cpp.s
 .PHONY : PlaintextWriter.cpp.s
 
 ProcessReads.o: ProcessReads.cpp.o
@@ -338,7 +338,7 @@ ProcessReads.o: ProcessReads.cpp.o
 
 # target to build an object file
 ProcessReads.cpp.o:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/ProcessReads.cpp.o
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/ProcessReads.cpp.o
 .PHONY : ProcessReads.cpp.o
 
 ProcessReads.i: ProcessReads.cpp.i
@@ -346,7 +346,7 @@ ProcessReads.i: ProcessReads.cpp.i
 
 # target to preprocess a source file
 ProcessReads.cpp.i:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/ProcessReads.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/ProcessReads.cpp.i
 .PHONY : ProcessReads.cpp.i
 
 ProcessReads.s: ProcessReads.cpp.s
@@ -354,7 +354,7 @@ ProcessReads.s: ProcessReads.cpp.s
 
 # target to generate assembly for a file
 ProcessReads.cpp.s:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/ProcessReads.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/ProcessReads.cpp.s
 .PHONY : ProcessReads.cpp.s
 
 common.o: common.cpp.o
@@ -362,7 +362,7 @@ common.o: common.cpp.o
 
 # target to build an object file
 common.cpp.o:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/common.cpp.o
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/common.cpp.o
 .PHONY : common.cpp.o
 
 common.i: common.cpp.i
@@ -370,7 +370,7 @@ common.i: common.cpp.i
 
 # target to preprocess a source file
 common.cpp.i:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/common.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/common.cpp.i
 .PHONY : common.cpp.i
 
 common.s: common.cpp.s
@@ -378,7 +378,7 @@ common.s: common.cpp.s
 
 # target to generate assembly for a file
 common.cpp.s:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/common.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/common.cpp.s
 .PHONY : common.cpp.s
 
 h5utils.o: h5utils.cpp.o
@@ -386,7 +386,7 @@ h5utils.o: h5utils.cpp.o
 
 # target to build an object file
 h5utils.cpp.o:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/h5utils.cpp.o
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/h5utils.cpp.o
 .PHONY : h5utils.cpp.o
 
 h5utils.i: h5utils.cpp.i
@@ -394,7 +394,7 @@ h5utils.i: h5utils.cpp.i
 
 # target to preprocess a source file
 h5utils.cpp.i:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/h5utils.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/h5utils.cpp.i
 .PHONY : h5utils.cpp.i
 
 h5utils.s: h5utils.cpp.s
@@ -402,7 +402,7 @@ h5utils.s: h5utils.cpp.s
 
 # target to generate assembly for a file
 h5utils.cpp.s:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/h5utils.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/h5utils.cpp.s
 .PHONY : h5utils.cpp.s
 
 hash.o: hash.cpp.o
@@ -410,7 +410,7 @@ hash.o: hash.cpp.o
 
 # target to build an object file
 hash.cpp.o:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/hash.cpp.o
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/hash.cpp.o
 .PHONY : hash.cpp.o
 
 hash.i: hash.cpp.i
@@ -418,7 +418,7 @@ hash.i: hash.cpp.i
 
 # target to preprocess a source file
 hash.cpp.i:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/hash.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/hash.cpp.i
 .PHONY : hash.cpp.i
 
 hash.s: hash.cpp.s
@@ -426,7 +426,7 @@ hash.s: hash.cpp.s
 
 # target to generate assembly for a file
 hash.cpp.s:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/hash.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/hash.cpp.s
 .PHONY : hash.cpp.s
 
 main.o: main.cpp.o
@@ -434,8 +434,8 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto.dir/build.make src/CMakeFiles/kallisto.dir/main.cpp.o
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/main.cpp.o
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto.dir/build.make src/CMakeFiles/kallisto.dir/main.cpp.o
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -443,8 +443,8 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto.dir/build.make src/CMakeFiles/kallisto.dir/main.cpp.i
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/main.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto.dir/build.make src/CMakeFiles/kallisto.dir/main.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -452,8 +452,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto.dir/build.make src/CMakeFiles/kallisto.dir/main.cpp.s
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/main.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto.dir/build.make src/CMakeFiles/kallisto.dir/main.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 weights.o: weights.cpp.o
@@ -461,7 +461,7 @@ weights.o: weights.cpp.o
 
 # target to build an object file
 weights.cpp.o:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/weights.cpp.o
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/weights.cpp.o
 .PHONY : weights.cpp.o
 
 weights.i: weights.cpp.i
@@ -469,7 +469,7 @@ weights.i: weights.cpp.i
 
 # target to preprocess a source file
 weights.cpp.i:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/weights.cpp.i
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/weights.cpp.i
 .PHONY : weights.cpp.i
 
 weights.s: weights.cpp.s
@@ -477,7 +477,7 @@ weights.s: weights.cpp.s
 
 # target to generate assembly for a file
 weights.cpp.s:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/weights.cpp.s
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(MAKE) -f src/CMakeFiles/kallisto_core.dir/build.make src/CMakeFiles/kallisto_core.dir/weights.cpp.s
 .PHONY : weights.cpp.s
 
 # Help Target
@@ -543,6 +543,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /data/SS_RNA_seq/Code/kallisto_pseudo_paired/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /data/SS_RNA_seq/Code/clustering_on_reads/modified-kallisto-source/kallisto_pseudo_paired/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
