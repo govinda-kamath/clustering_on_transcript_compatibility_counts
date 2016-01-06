@@ -53,6 +53,8 @@ To run the timing analysis, please follow the following instructions:
 * Download the Mouse genome (for example from [here](http://ftp.ncbi.nih.gov/genomes/M_musculus/Assembled_chromosomes/seq/)) and gunzip all the fa.gz files. 
 * Pass the path to the mouse trancriptome, the path to the mouse genome, and path to the modified version of kallisto for single end reads to [Timing_Analysis.ipynb](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/blob/master/Timing_pipeline/Timing_Analysis.ipynb), to verify all timing results. Set the -p option in the call to [time_test.py](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/blob/master/Timing_pipeline/time_test.py) there, to run timing analysis on the same 10 cells used in the paper. Otherwise it is run on 10 cells randomly selected from the dataset of Zeisel et al.
 
+## The Method
+
 The figure below compares our TCC clustering pipeline to the conventional cell clustering pipeline. Please refer to our manuscript for more details.
 
 ![pipeline](https://github.com/govinda-kamath/clustering_on_reads/blob/master/pipeline.png)
