@@ -63,4 +63,4 @@ os.system('python get_tcc_dist.py -i ./transcript_compatibility_counts/ -m '+str
 
 print('Generating pairwise distances...')
 
-os.system('python get_pairwise_distances.py ./Trapnell_TCC_dist.dat ./Trapnell_TCC_pairwise_distance.dat '+str(num_proc))
+os.system('python get_pairwise_distances.py ./Trapnell_TCC_distribution.dat ./Trapnell_TCC_pairwise_distance.dat '+str(num_proc))
