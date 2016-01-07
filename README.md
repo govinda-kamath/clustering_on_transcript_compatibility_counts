@@ -2,7 +2,7 @@
 
 This repository is a companion to the paper "Fast and accurate single-cell RNA-Seq analysis by clustering of transcript compatibility counts" by Ntranos, Kamath, Zhang, Pachter, and Tse. It contains the scripts and software necessary for reproducing the results in the paper.
 
-# Overview
+## Overview
 
 Rather than clustering cells based on their transcript abundances or gene expression, we determine the transcript compatibility counts (TCCs) for each cell and cluster cells using distances between TCC distributions. While there are multiple ways to compute transript-compatibility counts, in this implementation of the method we use [kallisto](https://github.com/pachterlab/kallisto).
 
@@ -11,7 +11,7 @@ In our paper we re-analyzed two recently published datasets:
 1. The 271 primary human myoblasts by [Trapnell et al.](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4122333/)
 2. The 3005 mouse brain cells by [Zeisel et al.](http://linnarssonlab.org/cortex/)
 
-We obtained the raw read files from NCBI's [Gene Expression Omnibus](http://www.ncbi.nlm.nih.gov/geo/). The Trapnell_pipeline and Zeisel_pipeline folders contain scripts for automatically downloading the SRR files corresponding to datasets. We recommend looking at the documentation in the iPython notebooks [Trapnell_Analysis.ipynb](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/blob/master/Trapnell_pipeline/Trapnell_Analysis.ipynb), [Zeisel_Analysis.ipynb](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/blob/master/Zeisel_pipeline/Zeisel_Analysis.ipynb), and [Timing_Analysis.ipynb](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/blob/master/Timing_pipeline/Timing_Analysis.ipynb). The notebooks contain the code needed to generate the figures in our paper.
+We obtained the raw read files from NCBI's [Gene Expression Omnibus](http://www.ncbi.nlm.nih.gov/geo/). The [Trapnell_pipeline](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/tree/master/Trapnell_pipeline) and [Zeisel_pipeline](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/tree/master/Zeisel_pipeline) folders contain scripts for automatically downloading the SRR files corresponding to datasets. We recommend looking at the documentation in the iPython notebooks [Trapnell_Analysis.ipynb](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/blob/master/Trapnell_pipeline/Trapnell_Analysis.ipynb), [Zeisel_Analysis.ipynb](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/blob/master/Zeisel_pipeline/Zeisel_Analysis.ipynb), and [Timing_Analysis.ipynb](https://github.com/govinda-kamath/clustering_on_transcript_compatibility_counts/blob/master/Timing_pipeline/Timing_Analysis.ipynb). The notebooks contain the code needed to generate the figures in our paper.
 
 ## Preliminaries
 
