@@ -19,6 +19,7 @@ The following programs are required to run the scripts in this repository.
 
 * [SRA toolkit](https://github.com/ncbi/sra-tools/wiki/HowTo:-Binary-Installation)
 * [Awk](https://www.gnu.org/software/gawk/)
+* [seqtk](https://github.com/lh3/seqtk)
 * [Samtools](http://www.htslib.org/download/)
 * [bowtie1](http://sourceforge.net/projects/bowtie-bio/files/bowtie/1.1.2/)
 * [bowtie2](http://sourceforge.net/projects/bowtie-bio/files/bowtie2/2.2.6/)
