@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/kallisto.dir/main.cpp.o  -o CMakeFiles/CMakeRelink.dir/kallisto -rdynamic libkallisto_core.a -lpthread -lhdf5 -lpthread -lz -ldl -lm -lrt 
