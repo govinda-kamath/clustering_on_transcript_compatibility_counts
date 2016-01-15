@@ -1,1 +1,0 @@
-/usr/bin/g++   -g3 -gdwarf-2 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/kallisto.dir/main.cpp.o  -o kallisto  libkallisto_core.a -lpthread /usr/local/Cellar/hdf5/1.8.15/lib/libhdf5.dylib /usr/local/opt/szip/lib/libsz.dylib /usr/lib/libz.dylib /usr/lib/libdl.dylib /usr/lib/libm.dylib 
