@@ -954,8 +954,8 @@ int main(int argc, char *argv[]) {
         of3.open(outfile_3.c_str(), std::ios::out); 
         for (int ec=0; ec<index.ecmap.size(); ec++){
             std::stringstream result;
-            std::copy(index.ecmap[ec].begin(), index.ecmap[ec].end(), std::ostream_iterator<int>(result, " "));
-            of3 << ec << ":\t" << result.str() << "\n";
+            std::copy(index.ecmap[ec].begin(), index.ecmap[ec].end(), std::ostream_iterator<int>(result, ","));
+            of3 << ec << "\t" << result.str() << "\n";
         }
         of3.close();
         
@@ -979,6 +979,8 @@ int main(int argc, char *argv[]) {
       } else {
         KmerIndex index(opt);
         index.load(opt);
+        int num_of_real_ec;
+        num_of_real_ec = index.ecmap.size();
         MinCollector collection(index, opt);
         int num_processed = 0;
         num_processed = ProcessReads(index, opt, collection);
@@ -987,7 +989,7 @@ int main(int argc, char *argv[]) {
             std::string outfile = opt.output;
             std::ofstream of;
             of.open(outfile.c_str(), std::ios::out);           
-            collection.write_nonzero(of);
+            collection.write_nonzero(of,num_of_real_ec);
             of.close();
         
         
