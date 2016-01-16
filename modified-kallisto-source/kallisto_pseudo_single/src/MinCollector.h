@@ -56,10 +56,19 @@ struct MinCollector {
     }
   }
   
-  void write_nonzero(std::ostream& o) {
+  void write_nonzero(std::ostream& o, const int num_of_real_ec) {
     for (int id = 0; id < counts.size(); id++) {
         if(counts[id]>0){
-            o << id << "\t" << counts[id] << "\n";
+            if(id<num_of_real_ec){
+                o << id << "\t" << counts[id] << "\n";}
+            else{
+                
+                
+            std::stringstream result;
+            std::copy(index.ecmap[id].begin(), index.ecmap[id].end(), std::ostream_iterator<int>(result, ","));           
+            o << result.str() << "\t" << counts[id] << "\n";
+                
+        }
         }
     }
   }
