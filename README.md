@@ -1,4 +1,4 @@
-# Clustering of transcript compatibility counts
+OB# Clustering of transcript compatibility counts
 
 This repository is a companion to the paper "Fast and accurate single-cell RNA-Seq analysis by clustering of transcript compatibility counts" by Ntranos, Kamath, Zhang, Pachter, and Tse. It contains the scripts and software necessary for reproducing the results in the paper.
 
@@ -30,7 +30,7 @@ The following programs are required to run the scripts in this repository.
 To run the scripts in the iPython notebooks, the following Python modules are required.
 
 * [iPython](http://ipython.org/install.html)
-* [scikit-learn](http://scikit-learn.org/stable/install.html) (Note: We used version 0.16.1. Different results may be generated with version 0.17)
+* [scikit-learn](http://scikit-learn.org/stable/install.html) (version 0.16.1)
 * [numpy](http://docs.scipy.org/doc/numpy-1.10.1/user/install.html)
 * [scipy](http://www.scipy.org/install.html)
 * [matplotlib](http://matplotlib.org/users/installing.html#mac-osx-using-pip)
