@@ -1,4 +1,4 @@
-OB# Clustering of transcript compatibility counts
+# Clustering of transcript compatibility counts
 
 This repository is a companion to the paper "Fast and accurate single-cell RNA-Seq analysis by clustering of transcript compatibility counts" by Ntranos, Kamath, Zhang, Pachter, and Tse. It contains the scripts and software necessary for reproducing the results in the paper.
 
