@@ -1,7 +1,7 @@
-import os
+import os,sys
 import multiprocessing as mp
 
-hisat_idx_path = '/data/SS_RNA_seq/Zeisel/reference_transcriptome/Mus_musculus.GRCm38.rel79.cdna.all.HISAT'
+hisat_idx_path = sys.argv[1]
 
 def run_hisat(cell_tuple):
     cell,hisat_idx_path = cell_tuple[0],cell_tuple[1]
