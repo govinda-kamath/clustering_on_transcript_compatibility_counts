@@ -30,7 +30,7 @@ def run_express(fltuple):
     flname=fltuple[2]
     #transcripts = '/data/SS_RNA_seq/Zeisel/reference_transcriptome/Mus_musculus.GRCm38.rel79.cdna.all.fa'
     hits = bam_dir+flname+'/'
-    Ecmd = 'express -o '+hits+' ' + transcripts + ' ' + hits +'hits.bam'
+    Ecmd = 'express --no-bias-correct -o '+hits+' ' + transcripts + ' ' + hits +'hits.bam'
     os.system(Ecmd)
 
 
