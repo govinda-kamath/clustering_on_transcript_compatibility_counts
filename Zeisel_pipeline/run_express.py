@@ -33,11 +33,23 @@ def run_express(fltuple):
     Ecmd = 'express --no-bias-correct -o '+hits+' ' + transcripts + ' ' + hits +'hits.bam'
     os.system(Ecmd)
 
+def run_express100(fltuple)
+    transcripts=fltuple[0]
+    bam_dir=fltuple[1]
+    flname=fltuple[2]
+    #transcripts = '/data/SS_RNA_seq/Zeisel/reference_transcriptome/Mus_musculus.GRCm38.rel79.cdna.all.fa'
+    hits = bam_dir+flname+'/'
+    Ecmd = 'express -o '+hits+' ' + transcripts + ' ' + hits +'hits.bam'
+    os.system(Ecmd)
 
 for suffix in ['100','10','5','1','_point5','_point1']:
     bam_dir='./Zeisel_Bowtie_subsample'+suffix+'/'
     flnames=os.listdir(bam_dir)
     fltuple=itertools.product([transcripts],[bam_dir],flnames)
-    pool = mp.Pool(processes = num_proc)
-    pool.map(run_express,fltuple)
+    if suffix=='100':
+        pool = mp.Pool(processes = num_proc)
+        pool.map(run_express100,fltuple)
+    else:
+        pool = mp.Pool(processes = num_proc)
+        pool.map(run_express,fltuple)
 
