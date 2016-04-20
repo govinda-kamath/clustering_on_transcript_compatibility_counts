@@ -2,6 +2,8 @@
 
 * To build follow the instructions given at https://pachterlab.github.io/kallisto/source.html
 
+* License: http://pachterlab.github.io/kallisto/license.html
+
 The functionality of this temporary kallisto version is identical to the original kallisto version 0.42.3 except for the new command "kallisto pseudoalign". The folder kallisto_pseudo_single contains the modifications for single-end reads\* and kallisto_pseudo_paired for paired-end. 
 \**single-end bypasses the requirement to specify fragment length and sd, which are otherwise necessary for quantification.* 
 
