@@ -1,6 +1,6 @@
 # Clustering of transcript compatibility counts
 
-This repository is a companion to the paper "[Fast and accurate single-cell RNA-Seq analysis by clustering of transcript compatibility counts](http://biorxiv.org/content/early/2016/01/15/036863)" by Ntranos, Kamath, Zhang, Pachter, and Tse. It contains the scripts and software necessary for reproducing the results in the paper.
+This repository is a companion to the paper "[Fast and accurate single-cell RNA-Seq analysis by clustering of transcript compatibility counts](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0970-8)" by Ntranos, Kamath, Zhang, Pachter, and Tse. It contains the scripts and software necessary for reproducing the results in the paper.
 
 ## Overview
 
